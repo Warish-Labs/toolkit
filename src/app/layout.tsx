@@ -22,6 +22,11 @@ export const metadata: Metadata = {
   },
   description: SITE_CONFIG.description,
   keywords: [
+    "free",
+    "tools",
+    "developer",
+    "utilities",
+    "online tools",
     "free online tools",
     "free calculators",
     "developer tools",
