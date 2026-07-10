@@ -2,7 +2,7 @@ export const SITE_CONFIG = {
   name: 'Toolkit',
   tagline: 'by WarishLabs',
   description: 'A fast, private, browser-first utility platform. Free online tools that run entirely in your browser — your data never leaves your device.',
-  url: 'https://tools.warishlabs.in',
+  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://tools.warishlabs.in',
   company: {
     name: 'WarishLabs',
     url: 'https://warishlabs.in',
@@ -11,7 +11,7 @@ export const SITE_CONFIG = {
   social: {
     twitter: '@warishlabs',
   },
-} as const;
+};
 
 export const READING_SPEED_WPM = 200;
 export const SEARCH_DEBOUNCE_MS = 150;

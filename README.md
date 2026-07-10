@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="public/brand/logo-rounded.svg" alt="Toolkit Logo" width="96" height="96" />
+</p>
+
 # 🧰 Toolkit — Browser-First Utilities
 
 [![Next.js](https://img.shields.io/badge/Framework-Next.js%2016-black?style=flat-square&logo=next.js)](https://nextjs.org/)
@@ -110,3 +114,20 @@ npm run format
 ```bash
 npm run check-all
 ```
+
+---
+
+## ⚡ Vercel Deployment Guide
+
+To deploy this Next.js 16 application to Vercel:
+
+1. **Push Changes to GitHub**: Ensure all changes are committed and pushed to your repository.
+2. **Import Project to Vercel**:
+   - Go to your Vercel Dashboard and click **Add New** → **Project**.
+   - Import your GitHub repository.
+3. **Configure Environment Variables**:
+   - Add the following environment variable in the Vercel project configuration settings under **Environment Variables**:
+     - Key: `NEXT_PUBLIC_SITE_URL`
+     - Value: `https://your-custom-domain.com` (or your Vercel generated preview URL)
+4. **Deploy**: Click **Deploy**. Vercel will automatically build the project using its built-in Next.js configuration.
+

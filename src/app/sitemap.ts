@@ -10,36 +10,35 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = SITE_CONFIG.url;
 
   // Static routes
-  const routes = [
-    "",
-    "/tools",
-    "/categories",
-    "/about",
-    "/privacy-policy",
-    "/terms",
-    "/disclaimer",
-  ].map((route) => ({
+  const mainHubs = ["", "/tools", "/categories"].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
     changeFrequency: "weekly" as const,
-    priority: route === "" ? 1.0 : 0.8,
+    priority: route === "" ? 1.0 : route === "/tools" ? 0.9 : 0.8,
+  }));
+
+  const infoPages = ["/about", "/privacy-policy", "/terms", "/disclaimer"].map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: route === "/about" ? 0.5 : 0.3,
   }));
 
   // Tools routes
   const toolRoutes = tools.map((tool) => ({
     url: `${baseUrl}/tools/${tool.slug}`,
     lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.6,
+    changeFrequency: "weekly" as const,
+    priority: 0.8,
   }));
 
   // Categories routes
   const categoryRoutes = categories.map((cat) => ({
     url: `${baseUrl}/categories/${cat.slug}`,
     lastModified: new Date(),
-    changeFrequency: "monthly" as const,
+    changeFrequency: "weekly" as const,
     priority: 0.7,
   }));
 
-  return [...routes, ...toolRoutes, ...categoryRoutes];
+  return [...mainHubs, ...infoPages, ...toolRoutes, ...categoryRoutes];
 }

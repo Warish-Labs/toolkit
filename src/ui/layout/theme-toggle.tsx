@@ -49,12 +49,6 @@ export function ThemeToggle() {
             ease: "easeInOut",
           }}
           className="block"
-          style={{
-            // @ts-expect-error -- custom motion property
-            "@media (prefers-reduced-motion: reduce)": {
-              transition: "none",
-            },
-          }}
         >
           {isDark ? (
             <Moon className="h-4 w-4" />

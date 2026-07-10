@@ -5,6 +5,7 @@ import { ToolLayout } from "@/src/ui/layout/tool-layout";
 import { getToolSchema } from "@/src/lib/seo";
 import type { Metadata } from "next";
 import React from "react";
+import { SITE_CONFIG } from "@/src/constants/site";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -22,10 +23,26 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (!tool) return {};
 
+  const url = `${SITE_CONFIG.url}/tools/${tool.slug}`;
+
   return {
     title: tool.name,
-    description: tool.description,
+    description: tool.longDescription || tool.description,
     keywords: tool.keywords,
+    alternates: {
+      canonical: url,
+    },
+    openGraph: {
+      title: `${tool.name} | ${SITE_CONFIG.name}`,
+      description: tool.description,
+      url: url,
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${tool.name} | ${SITE_CONFIG.name}`,
+      description: tool.description,
+    },
   };
 }
 

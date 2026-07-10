@@ -11,6 +11,7 @@ import { getItemListSchema } from "@/src/lib/seo";
 import { SITE_CONFIG } from "@/src/constants/site";
 import { Search } from "lucide-react";
 import { getIcon } from "@/src/lib/icons";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/src/ui/shared/select";
 
 export default function ToolsHubPage() {
   const allTools = useMemo(() => getAllTools(), []);
@@ -53,30 +54,20 @@ export default function ToolsHubPage() {
 
         {/* Controls */}
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-          <div className="flex flex-wrap gap-2">
-            <button
-              onClick={() => setSelectedCategory("all")}
-              className={`rounded-lg px-3 py-1.5 text-xs font-semibold transition-colors focus-ring ${
-                selectedCategory === "all"
-                  ? "bg-primary text-primary-foreground"
-                  : "bg-muted text-muted-foreground hover:text-foreground"
-              }`}
-            >
-              All Categories
-            </button>
-            {categories.map((cat) => (
-              <button
-                key={cat.slug}
-                onClick={() => setSelectedCategory(cat.slug)}
-                className={`rounded-lg px-3 py-1.5 text-xs font-semibold transition-colors focus-ring ${
-                  selectedCategory === cat.slug
-                    ? "bg-primary text-primary-foreground"
-                    : "bg-muted text-muted-foreground hover:text-foreground"
-                }`}
-              >
-                {cat.name}
-              </button>
-            ))}
+          <div className="flex items-center gap-2">
+            <Select value={selectedCategory} onValueChange={(val) => setSelectedCategory(val || "all")}>
+              <SelectTrigger className="w-[180px]">
+                <SelectValue placeholder="All Categories" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">All Categories</SelectItem>
+                {categories.map((cat) => (
+                  <SelectItem key={cat.slug} value={cat.slug}>
+                    {cat.name}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
           </div>
 
           <div className="relative max-w-xs w-full">

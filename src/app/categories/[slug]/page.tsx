@@ -26,9 +26,25 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (!category) return {};
 
+  const url = `${SITE_CONFIG.url}/categories/${category.slug}`;
+
   return {
     title: category.name,
-    description: category.description,
+    description: category.longDescription || category.description,
+    alternates: {
+      canonical: url,
+    },
+    openGraph: {
+      title: `${category.name} | ${SITE_CONFIG.name}`,
+      description: category.description,
+      url: url,
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${category.name} | ${SITE_CONFIG.name}`,
+      description: category.description,
+    },
   };
 }
 
