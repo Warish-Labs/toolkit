@@ -22,6 +22,7 @@ export const metadata: Metadata = {
   },
   description: SITE_CONFIG.description,
   keywords: [
+    "toolkit",
     "free",
     "tools",
     "developer",
