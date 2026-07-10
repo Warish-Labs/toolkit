@@ -1,0 +1,209 @@
+import type { Tool } from '@/src/types';
+
+export const tools: Tool[] = [
+  // === Calculators ===
+  {
+    name: 'Age Calculator',
+    slug: 'age-calculator',
+    description: 'Calculate your exact age in years, months, and days from your date of birth.',
+    longDescription: 'Find out your precise age broken down into years, months, days, hours, and minutes. Simply enter your date of birth and get instant results. Perfect for filling out forms, calculating age differences, or satisfying your curiosity.',
+    category: 'calculators',
+    tags: ['age', 'birthday', 'date', 'years', 'months', 'days'],
+    keywords: ['age calculator', 'calculate age', 'date of birth calculator', 'how old am i', 'exact age'],
+    icon: 'clock',
+    executionType: 'client',
+    isFeatured: true,
+    isNew: true,
+    dateAdded: '2025-07-10',
+    faqs: [
+      { question: 'How does the age calculator work?', answer: 'Enter your date of birth and the calculator instantly computes your exact age in years, months, and days using precise calendar arithmetic.' },
+      { question: 'Is my date of birth stored anywhere?', answer: 'No. All calculations happen locally in your browser. Your data never leaves your device.' },
+      { question: 'Can I calculate age between two dates?', answer: 'Yes! You can set both a start date and an end date to calculate the age or duration between any two dates.' },
+    ],
+    howToUse: ['Enter your date of birth.', 'Optionally set a custom end date.', 'View your exact age in years, months, and days.'],
+    relatedTools: ['bmi-calculator', 'percentage-calculator'],
+  },
+  {
+    name: 'BMI Calculator',
+    slug: 'bmi-calculator',
+    description: 'Calculate your Body Mass Index and understand your health category.',
+    longDescription: 'Compute your Body Mass Index (BMI) using your height and weight. The calculator supports both metric and imperial units and shows your health category (underweight, normal, overweight, or obese) with helpful guidance.',
+    category: 'calculators',
+    tags: ['bmi', 'body mass index', 'health', 'weight', 'height', 'fitness'],
+    keywords: ['bmi calculator', 'body mass index', 'weight calculator', 'health calculator', 'bmi check'],
+    icon: 'heart-pulse',
+    executionType: 'client',
+    isFeatured: true,
+    isNew: true,
+    dateAdded: '2025-07-10',
+    faqs: [
+      { question: 'What is BMI?', answer: 'BMI (Body Mass Index) is a simple measure of body fat based on your height and weight. It is calculated as weight (kg) divided by height (m) squared.' },
+      { question: 'What are the BMI categories?', answer: 'Underweight: < 18.5, Normal: 18.5–24.9, Overweight: 25–29.9, Obese: ≥ 30.' },
+      { question: 'Is BMI accurate for everyone?', answer: 'BMI is a useful screening tool but does not account for muscle mass, bone density, or body composition. Consult a healthcare professional for personalized advice.' },
+    ],
+    howToUse: ['Select your preferred unit system (metric or imperial).', 'Enter your height and weight.', 'View your BMI score and health category instantly.'],
+    relatedTools: ['age-calculator', 'percentage-calculator'],
+  },
+  {
+    name: 'Percentage Calculator',
+    slug: 'percentage-calculator',
+    description: 'Calculate percentages, percentage change, and more with ease.',
+    longDescription: 'A versatile percentage calculator that handles multiple calculation types: find what percent one number is of another, calculate percentage increase/decrease, and find a percentage of a number.',
+    category: 'calculators',
+    tags: ['percentage', 'percent', 'math', 'calculation', 'increase', 'decrease'],
+    keywords: ['percentage calculator', 'percent calculator', 'percentage change', 'calculate percentage', 'percentage increase'],
+    icon: 'percent',
+    executionType: 'client',
+    isFeatured: false,
+    isNew: true,
+    dateAdded: '2025-07-10',
+    faqs: [
+      { question: 'What types of percentage calculations are supported?', answer: 'You can calculate: what is X% of Y, X is what % of Y, and percentage change from X to Y.' },
+      { question: 'How accurate are the results?', answer: 'Results are computed with full floating-point precision and rounded to 2 decimal places for display.' },
+    ],
+    howToUse: ['Select the type of percentage calculation you need.', 'Enter the required values.', 'View the result instantly.'],
+    relatedTools: ['age-calculator', 'bmi-calculator'],
+  },
+  // === Developer Tools ===
+  {
+    name: 'JSON Formatter / Validator',
+    slug: 'json-formatter',
+    description: 'Format, validate, and beautify JSON data with syntax highlighting.',
+    longDescription: 'Paste your JSON data to instantly format, validate, and beautify it with proper indentation and syntax highlighting. Supports minification, copy-to-clipboard, and detailed error reporting for invalid JSON.',
+    category: 'developer-tools',
+    tags: ['json', 'formatter', 'validator', 'beautify', 'minify', 'developer'],
+    keywords: ['json formatter', 'json validator', 'json beautifier', 'format json online', 'validate json'],
+    icon: 'code',
+    executionType: 'client',
+    isFeatured: true,
+    isNew: true,
+    dateAdded: '2025-07-10',
+    faqs: [
+      { question: 'What does this tool do?', answer: 'It formats, validates, and beautifies JSON data with proper indentation and syntax highlighting. It also supports minification.' },
+      { question: 'Can it fix invalid JSON?', answer: 'The tool reports detailed error messages for invalid JSON with line and column numbers to help you fix issues, but it does not auto-fix them.' },
+    ],
+    howToUse: ['Paste your JSON data into the input field.', 'Click Format to beautify or Minify to compress.', 'View validation status and copy the formatted output.'],
+    relatedTools: ['uuid-generator', 'base64-encoder-decoder', 'hash-generator'],
+  },
+  {
+    name: 'UUID Generator',
+    slug: 'uuid-generator',
+    description: 'Generate random UUIDs (v4) instantly for your projects.',
+    longDescription: 'Generate one or multiple UUID v4 (Universally Unique Identifiers) with a single click. Perfect for database keys, API tokens, and testing. All generation happens client-side using the Web Crypto API.',
+    category: 'developer-tools',
+    tags: ['uuid', 'guid', 'generator', 'unique id', 'v4', 'developer'],
+    keywords: ['uuid generator', 'generate uuid', 'uuid v4', 'guid generator', 'random uuid'],
+    icon: 'fingerprint',
+    executionType: 'client',
+    isFeatured: true,
+    isNew: true,
+    dateAdded: '2025-07-10',
+    faqs: [
+      { question: 'What is a UUID?', answer: 'A UUID (Universally Unique Identifier) is a 128-bit number used to uniquely identify information in computer systems. Version 4 UUIDs are randomly generated.' },
+      { question: 'Are the UUIDs truly random?', answer: 'Yes, this tool uses the Web Crypto API (crypto.randomUUID()) for cryptographically secure random generation.' },
+    ],
+    howToUse: ['Click Generate to create a new UUID.', 'Set the count to generate multiple UUIDs at once.', 'Click Copy to copy the UUID(s) to your clipboard.'],
+    relatedTools: ['json-formatter', 'hash-generator', 'base64-encoder-decoder'],
+  },
+  {
+    name: 'Base64 Encoder / Decoder',
+    slug: 'base64-encoder-decoder',
+    description: 'Encode text to Base64 or decode Base64 strings instantly.',
+    longDescription: 'Convert text to Base64-encoded strings or decode Base64 back to plain text. Supports UTF-8 encoding for international characters. Useful for data URIs, API payloads, and embedding data in URLs.',
+    category: 'developer-tools',
+    tags: ['base64', 'encoder', 'decoder', 'encode', 'decode', 'developer'],
+    keywords: ['base64 encoder', 'base64 decoder', 'encode base64', 'decode base64', 'base64 converter'],
+    icon: 'binary',
+    executionType: 'client',
+    isFeatured: false,
+    isNew: true,
+    dateAdded: '2025-07-10',
+    faqs: [
+      { question: 'What is Base64?', answer: 'Base64 is a binary-to-text encoding scheme that represents binary data as an ASCII string. It is commonly used in emails, data URIs, and API communication.' },
+      { question: 'Does this support UTF-8?', answer: 'Yes, the encoder properly handles UTF-8 characters including emoji and international text.' },
+    ],
+    howToUse: ['Enter text in the input field.', 'Click Encode to convert to Base64, or paste Base64 and click Decode.', 'Copy the result to your clipboard.'],
+    relatedTools: ['json-formatter', 'hash-generator', 'uuid-generator'],
+  },
+  {
+    name: 'Hash Generator',
+    slug: 'hash-generator',
+    description: 'Generate MD5, SHA-1, SHA-256, and SHA-512 hashes from any text.',
+    longDescription: 'Compute cryptographic hash values from text input. Supports MD5, SHA-1, SHA-256, and SHA-512 algorithms. All hashing is performed locally in your browser using the Web Crypto API — your data never leaves your device.',
+    category: 'developer-tools',
+    tags: ['hash', 'md5', 'sha', 'sha256', 'sha512', 'checksum', 'developer'],
+    keywords: ['hash generator', 'md5 hash', 'sha256 hash', 'hash calculator', 'generate hash online'],
+    icon: 'hash',
+    executionType: 'client',
+    isFeatured: false,
+    isNew: true,
+    dateAdded: '2025-07-10',
+    faqs: [
+      { question: 'What hash algorithms are supported?', answer: 'MD5, SHA-1, SHA-256, and SHA-512. SHA-256 and SHA-512 are recommended for security-sensitive applications.' },
+      { question: 'Is MD5 secure?', answer: 'MD5 is considered cryptographically broken and should not be used for security purposes. It is still useful for checksums and non-security applications.' },
+    ],
+    howToUse: ['Enter or paste your text.', 'Select the hash algorithm(s) you want.', 'View the computed hash values and copy them.'],
+    relatedTools: ['uuid-generator', 'base64-encoder-decoder', 'json-formatter'],
+  },
+  // === Text Tools ===
+  {
+    name: 'Word / Character Counter',
+    slug: 'word-character-counter',
+    description: 'Count words, characters, sentences, and paragraphs in your text.',
+    longDescription: 'Analyze your text with detailed statistics including word count, character count (with and without spaces), sentence count, paragraph count, and estimated reading time. Perfect for writers, students, and content creators.',
+    category: 'text-tools',
+    tags: ['word count', 'character count', 'text analysis', 'writing', 'counter'],
+    keywords: ['word counter', 'character counter', 'text counter', 'word count tool', 'letter counter'],
+    icon: 'letter-text',
+    executionType: 'client',
+    isFeatured: true,
+    isNew: true,
+    dateAdded: '2025-07-10',
+    faqs: [
+      { question: 'What statistics does this tool provide?', answer: 'Word count, character count (with and without spaces), sentence count, paragraph count, and estimated reading time.' },
+      { question: 'How is reading time calculated?', answer: 'Reading time is estimated based on an average reading speed of 200 words per minute.' },
+    ],
+    howToUse: ['Type or paste your text into the text area.', 'View real-time statistics updated as you type.', 'Use the results for essays, articles, or social media posts.'],
+    relatedTools: ['case-converter'],
+  },
+  {
+    name: 'Case Converter',
+    slug: 'case-converter',
+    description: 'Convert text between uppercase, lowercase, title case, and more.',
+    longDescription: 'Transform text case instantly. Supports uppercase, lowercase, title case, sentence case, camelCase, PascalCase, snake_case, kebab-case, and more. Perfect for developers and writers who need to quickly reformat text.',
+    category: 'text-tools',
+    tags: ['case', 'uppercase', 'lowercase', 'title case', 'camelCase', 'converter'],
+    keywords: ['case converter', 'text case', 'uppercase converter', 'lowercase converter', 'title case converter'],
+    icon: 'case-sensitive',
+    executionType: 'client',
+    isFeatured: false,
+    isNew: true,
+    dateAdded: '2025-07-10',
+    faqs: [
+      { question: 'What case formats are supported?', answer: 'Uppercase, lowercase, title case, sentence case, camelCase, PascalCase, snake_case, kebab-case, and CONSTANT_CASE.' },
+      { question: 'Can I convert code variable names?', answer: 'Yes! This tool supports developer-friendly formats like camelCase, PascalCase, snake_case, and kebab-case.' },
+    ],
+    howToUse: ['Paste or type your text.', 'Click a conversion button to transform the text.', 'Copy the converted text to your clipboard.'],
+    relatedTools: ['word-character-counter'],
+  },
+];
+
+export function getToolBySlug(slug: string): Tool | undefined {
+  return tools.find((t) => t.slug === slug);
+}
+
+export function getToolsByCategory(categorySlug: string): Tool[] {
+  return tools.filter((t) => t.category === categorySlug);
+}
+
+export function getFeaturedTools(): Tool[] {
+  return tools.filter((t) => t.isFeatured);
+}
+
+export function getNewTools(): Tool[] {
+  return tools.filter((t) => t.isNew);
+}
+
+export function getAllTools(): Tool[] {
+  return [...tools];
+}
