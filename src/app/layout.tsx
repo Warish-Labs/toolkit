@@ -17,10 +17,27 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: `${SITE_CONFIG.name} — Browser-First Utilities`,
+    default: `${SITE_CONFIG.name} — Free Browser-First Utilities`,
     template: `%s | ${SITE_CONFIG.name}`,
   },
   description: SITE_CONFIG.description,
+  keywords: [
+    "free online tools",
+    "free calculators",
+    "developer tools",
+    "text utility tools",
+    "online json formatter",
+    "private uuid generator",
+    "base64 encoder decoder",
+    "hash generator online",
+    "bmi calculator free",
+    "age calculator free",
+    "word counter online",
+    "case converter",
+    "warishlabs",
+    "client-side browser utilities",
+    "secure tools"
+  ],
   metadataBase: new URL(SITE_CONFIG.url),
   alternates: {
     canonical: "./",

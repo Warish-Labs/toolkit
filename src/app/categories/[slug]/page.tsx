@@ -27,22 +27,24 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!category) return {};
 
   const url = `${SITE_CONFIG.url}/categories/${category.slug}`;
+  const keywords = ["free", "online", "warishlabs", category.name.toLowerCase(), "tools", "calculator", `free ${category.name.toLowerCase()} tools`];
 
   return {
-    title: category.name,
+    title: `Free ${category.name}`,
     description: category.longDescription || category.description,
+    keywords,
     alternates: {
       canonical: url,
     },
     openGraph: {
-      title: `${category.name} | ${SITE_CONFIG.name}`,
+      title: `Free ${category.name} | ${SITE_CONFIG.name}`,
       description: category.description,
       url: url,
       type: "website",
     },
     twitter: {
       card: "summary_large_image",
-      title: `${category.name} | ${SITE_CONFIG.name}`,
+      title: `Free ${category.name} | ${SITE_CONFIG.name}`,
       description: category.description,
     },
   };

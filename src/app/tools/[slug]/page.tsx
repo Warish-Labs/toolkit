@@ -24,23 +24,25 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!tool) return {};
 
   const url = `${SITE_CONFIG.url}/tools/${tool.slug}`;
+  const genericKeywords = ["free", "online", "warishlabs", tool.category, "tools", "calculator", `free ${tool.name.toLowerCase()}`];
+  const allKeywords = Array.from(new Set([...genericKeywords, ...tool.keywords, tool.name.toLowerCase()]));
 
   return {
-    title: tool.name,
+    title: `Free ${tool.name}`,
     description: tool.longDescription || tool.description,
-    keywords: tool.keywords,
+    keywords: allKeywords,
     alternates: {
       canonical: url,
     },
     openGraph: {
-      title: `${tool.name} | ${SITE_CONFIG.name}`,
+      title: `Free ${tool.name} | ${SITE_CONFIG.name}`,
       description: tool.description,
       url: url,
       type: "website",
     },
     twitter: {
       card: "summary_large_image",
-      title: `${tool.name} | ${SITE_CONFIG.name}`,
+      title: `Free ${tool.name} | ${SITE_CONFIG.name}`,
       description: tool.description,
     },
   };
