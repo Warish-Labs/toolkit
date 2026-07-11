@@ -11,6 +11,7 @@ export const SITE_CONFIG = {
   social: {
     twitter: '@warishlabs',
   },
+  googleAnalyticsId: process.env.NEXT_PUBLIC_GA_ID || 'G-WWDB0JP071',
 };
 
 export const READING_SPEED_WPM = 200;
