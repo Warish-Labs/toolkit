@@ -63,6 +63,18 @@ import { SqlFormatterTool } from "@/src/ui/tool/sql-formatter";
 import { UrlEncoderDecoderTool } from "@/src/ui/tool/url-encoder-decoder";
 import { JwtDecoderTool } from "@/src/ui/tool/jwt-decoder";
 
+// --- Text Tools (Batch 4) ---
+import { TextAnalyzerTool } from "@/src/ui/tool/text-analyzer";
+import { ReadingTimeCalculatorTool } from "@/src/ui/tool/reading-time-calculator";
+import { RemoveDuplicateLinesTool } from "@/src/ui/tool/remove-duplicate-lines";
+import { SortLinesTool } from "@/src/ui/tool/sort-lines";
+import { ReverseTextTool } from "@/src/ui/tool/reverse-text";
+import { FindReplaceTool } from "@/src/ui/tool/find-replace";
+import { TextRepeaterTool } from "@/src/ui/tool/text-repeater";
+import { TrimWhitespaceTool } from "@/src/ui/tool/trim-whitespace";
+import { RemoveSpecialCharactersTool } from "@/src/ui/tool/remove-special-characters";
+import { TextBinaryConverterTool } from "@/src/ui/tool/text-binary-converter";
+
 export const toolRegistry: Record<string, ComponentType> = {
   "age-calculator": AgeCalculatorTool,
   "bmi-calculator": BmiCalculatorTool,
@@ -133,6 +145,18 @@ export const toolRegistry: Record<string, ComponentType> = {
   "sql-minifier": SqlFormatterTool,
   "url-encoder-decoder": UrlEncoderDecoderTool,
   "jwt-decoder": JwtDecoderTool,
+
+  // --- Text Tools (Batch 4) ---
+  "text-analyzer": TextAnalyzerTool,
+  "reading-time-calculator": ReadingTimeCalculatorTool,
+  "remove-duplicate-lines": RemoveDuplicateLinesTool,
+  "sort-lines": SortLinesTool,
+  "reverse-text": ReverseTextTool,
+  "find-replace": FindReplaceTool,
+  "text-repeater": TextRepeaterTool,
+  "trim-whitespace": TrimWhitespaceTool,
+  "remove-special-characters": RemoveSpecialCharactersTool,
+  "text-binary-converter": TextBinaryConverterTool,
 };
 
 export function getToolComponent(slug: string): ComponentType | null {
