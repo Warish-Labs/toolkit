@@ -68,6 +68,11 @@ import { RegexTesterTool } from "@/src/ui/tool/regex-tester";
 import { CronGeneratorTool } from "@/src/ui/tool/cron-generator";
 import { UnixTimestampConverterTool } from "@/src/ui/tool/unix-timestamp-converter";
 import { RandomGeneratorTool } from "@/src/ui/tool/random-generator";
+import { HashCheckerTool } from "@/src/ui/tool/hash-checker";
+import { ColorPickerTool } from "@/src/ui/tool/color-picker";
+import { LoremIpsumGeneratorTool } from "@/src/ui/tool/lorem-ipsum-generator";
+import { QrCodeGeneratorTool } from "@/src/ui/tool/qr-code-generator";
+import { AsciiTableTool } from "@/src/ui/tool/ascii-table";
 
 // --- Text Tools (Batch 4) ---
 import { TextAnalyzerTool } from "@/src/ui/tool/text-analyzer";
@@ -157,6 +162,15 @@ export const toolRegistry: Record<string, ComponentType> = {
   "cron-generator": CronGeneratorTool,
   "unix-timestamp-converter": UnixTimestampConverterTool,
   "random-generator": RandomGeneratorTool,
+  "hash-checker": HashCheckerTool,
+  "hmac-generator": HashCheckerTool,
+  "color-picker": ColorPickerTool,
+  "color-palette-generator": ColorPickerTool,
+  "lorem-ipsum-generator": LoremIpsumGeneratorTool,
+  "qr-code-generator": QrCodeGeneratorTool,
+  "barcode-generator": QrCodeGeneratorTool,
+  "ascii-table": AsciiTableTool,
+  "ascii-art-generator": AsciiTableTool,
 
   // --- Text Tools (Batch 4) ---
   "text-analyzer": TextAnalyzerTool,
