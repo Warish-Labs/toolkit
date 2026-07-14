@@ -37,6 +37,21 @@ import { CagrCalculatorTool } from "@/src/ui/tool/cagr-calculator";
 import { CagrReverseCalculatorTool } from "@/src/ui/tool/cagr-reverse-calculator";
 import { CurrencySplitCalculatorTool } from "@/src/ui/tool/currency-split-calculator";
 
+// --- Date & Time (Batch 2) ---
+import { TimeDurationCalculatorTool } from "@/src/ui/tool/time-duration-calculator";
+import { DateDifferenceCalculatorTool } from "@/src/ui/tool/date-difference-calculator";
+import { WorkingDaysCalculatorTool } from "@/src/ui/tool/working-days-calculator";
+import { CountdownCalculatorTool } from "@/src/ui/tool/countdown-calculator";
+import { DateCalculatorTool } from "@/src/ui/tool/date-calculator";
+import { StopwatchTool } from "@/src/ui/tool/stopwatch";
+import { TimerTool } from "@/src/ui/tool/timer";
+import { CalendarGeneratorTool } from "@/src/ui/tool/calendar-generator";
+import { LeapYearCheckerTool } from "@/src/ui/tool/leap-year-checker";
+import { AgeDifferenceTool } from "@/src/ui/tool/age-difference";
+import { BusinessDaysCalculatorTool } from "@/src/ui/tool/business-days-calculator";
+import { TimeZoneConverterTool } from "@/src/ui/tool/time-zone-converter";
+import { WeekNumberCalculatorTool } from "@/src/ui/tool/week-number-calculator";
+
 export const toolRegistry: Record<string, ComponentType> = {
   "age-calculator": AgeCalculatorTool,
   "bmi-calculator": BmiCalculatorTool,
@@ -75,6 +90,21 @@ export const toolRegistry: Record<string, ComponentType> = {
   "cagr-calculator": CagrCalculatorTool,
   "cagr-reverse-calculator": CagrReverseCalculatorTool,
   "currency-split-calculator": CurrencySplitCalculatorTool,
+
+  // --- Date & Time ---
+  "time-duration-calculator": TimeDurationCalculatorTool,
+  "date-difference-calculator": DateDifferenceCalculatorTool,
+  "working-days-calculator": WorkingDaysCalculatorTool,
+  "countdown-calculator": CountdownCalculatorTool,
+  "date-calculator": DateCalculatorTool,
+  "stopwatch": StopwatchTool,
+  "timer": TimerTool,
+  "calendar-generator": CalendarGeneratorTool,
+  "leap-year-checker": LeapYearCheckerTool,
+  "age-difference-calculator": AgeDifferenceTool,
+  "business-days-calculator": BusinessDaysCalculatorTool,
+  "time-zone-converter": TimeZoneConverterTool,
+  "week-number-calculator": WeekNumberCalculatorTool,
 };
 
 export function getToolComponent(slug: string): ComponentType | null {
