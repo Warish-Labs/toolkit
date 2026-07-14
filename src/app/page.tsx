@@ -11,6 +11,7 @@ import { Card, CardContent } from "@/src/ui/shared/card";
 import { Badge } from "@/src/ui/shared/badge";
 import { Search, Shield, Zap, Sparkles, ArrowRight, ShieldCheck } from "lucide-react";
 import { getIcon } from "@/src/lib/icons";
+import { HeroNetworkBackground } from "@/src/ui/layout/hero-network-background";
 
 export default function HomePage() {
   const [searchOpen, setSearchOpen] = useState(false);
@@ -41,7 +42,9 @@ export default function HomePage() {
       <div className="flex flex-col min-h-screen">
         {/* 1. Hero Section */}
         <section className="relative overflow-hidden bg-background py-20 sm:py-32">
-          {/* Subtle design element */}
+          {/* Animated node-network canvas — theme-aware, pointer-events-none */}
+          <HeroNetworkBackground />
+          {/* Dot-grid overlay */}
           <div className="absolute inset-0 -z-10 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
           
           <div className="container-content text-center space-y-6 max-w-3xl">
