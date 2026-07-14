@@ -273,9 +273,9 @@ export default function HomePage() {
               </div>
               <div>
                 <p className="text-3xl font-extrabold text-foreground">
-                  <Globe className="h-7 w-7 inline-block text-green-500" />
+                  <ShieldCheck className="h-7 w-7 inline-block text-primary" />
                 </p>
-                <p className="text-xs text-muted-foreground uppercase tracking-wider font-semibold mt-1">Works Offline</p>
+                <p className="text-xs text-muted-foreground uppercase tracking-wider font-semibold mt-1">100% Private</p>
               </div>
             </div>
           </div>

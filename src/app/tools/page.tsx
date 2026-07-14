@@ -230,7 +230,7 @@ function ToolsHubContent() {
           </Badge>
           <h1 className="text-4xl font-extrabold tracking-tight">All Tools</h1>
           <p className="text-sm text-muted-foreground">
-            Explore our curated, local utility toolbox. Clean formatting, math projections, and offline scripts running entirely in your browser.
+            Explore our curated, local utility toolbox. Clean formatting, math projections, and secure client-side scripts running entirely in your browser.
           </p>
         </div>
         {/* Filter Controls Bar */}
