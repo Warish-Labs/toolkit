@@ -104,6 +104,8 @@ import { BrowserInfoTool } from "@/src/ui/tool/browser-info";
 import { StorageViewerTool } from "@/src/ui/tool/storage-viewer";
 import { ClipboardInspectorTool } from "@/src/ui/tool/clipboard-inspector";
 import { CssGeneratorTool } from "@/src/ui/tool/css-generator";
+import { ColorStudioTool } from "@/src/ui/tool/color-studio";
+import { SeoStudioTool } from "@/src/ui/tool/seo-studio";
 
 export const toolRegistry: Record<string, ComponentType> = {
   "age-calculator": AgeCalculatorTool,
@@ -184,7 +186,7 @@ export const toolRegistry: Record<string, ComponentType> = {
   "hash-checker": HashCheckerTool,
   "hmac-generator": HashCheckerTool,
   "color-picker": ColorPickerTool,
-  "color-palette-generator": ColorPickerTool,
+  "color-palette-generator": ColorStudioTool,
   "lorem-ipsum-generator": LoremIpsumGeneratorTool,
   "qr-code-generator": QrCodeGeneratorTool,
   "barcode-generator": QrCodeGeneratorTool,
@@ -240,6 +242,20 @@ export const toolRegistry: Record<string, ComponentType> = {
   "css-clamp-generator": CssGeneratorTool,
   "css-filter-generator": CssGeneratorTool,
   "css-clip-path-generator": CssGeneratorTool,
+  "color-contrast-checker": ColorStudioTool,
+  "color-a11y-checker": ColorStudioTool,
+  "color-converters": ColorStudioTool,
+  "cmyk-converter": ColorStudioTool,
+  "color-blindness-simulator": ColorStudioTool,
+  "tailwind-color-finder": ColorStudioTool,
+  "meta-tag-generator": SeoStudioTool,
+  "og-tag-generator": SeoStudioTool,
+  "twitter-card-generator": SeoStudioTool,
+  "robots-txt-generator": SeoStudioTool,
+  "sitemap-generator": SeoStudioTool,
+  "canonical-url-generator": SeoStudioTool,
+  "schema-generator": SeoStudioTool,
+  "json-ld-formatter": SeoStudioTool,
 };
 
 export function getToolComponent(slug: string): ComponentType | null {
