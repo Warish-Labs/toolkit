@@ -110,15 +110,15 @@
 - [x] Morse Encoder/Decoder (`morse-converter`) - **Done** ✅
 
 ### Batch 5 — Unit Converters
-- [ ] Unit Converter (Length, Weight, Area, Volume, Speed, Temperature, Time, Pressure, Force, Torque, Power, Energy, Frequency, Fuel Economy, Storage Units, Data Transfer Speed, Angle, Number Base) (`unit-converter`) - ⬜ Todo
+- [x] Unit Converter (Length, Weight, Area, Volume, Speed, Temperature, Time, Pressure, Force, Torque, Power, Energy, Frequency, Fuel Economy, Storage Units, Data Transfer Speed, Angle, Number Base) (`unit-converter`) - **Done** ✅
 
 ### Batch 6 — Number Tools
-- [ ] Prime Checker/Generator (`prime-checker`) - ⬜ Todo
-- [ ] Factors Calculator (`factors-calculator`) - ⬜ Todo
-- [ ] GCD/LCM Calculator (`gcd-lcm-calculator`) - ⬜ Todo
-- [ ] Decimal↔Binary/Hex/Octal (`number-base-converter`) - ⬜ Todo
-- [ ] Scientific Notation Converter (`scientific-notation-converter`) - ⬜ Todo
-- [ ] Roman Numeral Converter (`roman-numeral-converter`) - ⬜ Todo
+- [x] Prime Checker/Generator (`prime-checker`) - **Done** ✅
+- [x] Factors Calculator (`factors-calculator`) - **Done** ✅
+- [x] GCD/LCM Calculator (`gcd-lcm-calculator`) - **Done** ✅
+- [x] Decimal↔Binary/Hex/Octal (`number-base-converter`) - **Done** ✅
+- [x] Scientific Notation Converter (`scientific-notation-converter`) - **Done** ✅
+- [x] Roman Numeral Converter (`roman-numeral-converter`) - **Done** ✅
 
 ### Batch 7 — Security & Encryption
 - [ ] Password Strength Checker (`password-strength-checker`) - ⬜ Todo

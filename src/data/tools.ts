@@ -2075,6 +2075,160 @@ export const tools: Tool[] = [
     howToUse: ['Choose the Encode (Text to Morse) or Decode (Morse to Text) tab.', 'Type your message or Morse code string.', 'Review and copy the result.'],
     relatedTools: ['text-binary-converter', 'base64-encoder-decoder']
   },
+  {
+    name: 'Unit Converter',
+    slug: 'unit-converter',
+    description: 'Convert between different units of length, weight, area, volume, temperature, time, and data storage.',
+    longDescription: 'A multi-purpose unit converter. Convert metric and imperial units of measurement for length, weight/mass, temperature, area, volume, time, and digital storage.',
+    category: 'unit-converters',
+    tags: ['converter', 'units', 'measurement', 'imperial', 'metric'],
+    keywords: ['unit converter online', 'metric to imperial conversion', 'convert measurements', 'length converter', 'weight conversion tool'],
+    icon: 'ruler',
+    executionType: 'client',
+    dateAdded: '2026-07-14',
+    isNew: true,
+    metaTitle: 'Unit Converter – Metric & Imperial Conversion | Toolkit',
+    metaDescription: 'Free online unit converter. Convert between length, weight, area, volume, temperature, time, and storage units instantly.',
+    h1: 'Multi-Unit Measurement Converter',
+    intro: 'Select a category and values to translate between imperial and metric measurement formats.',
+    faqs: [
+      { question: 'What measurements are supported?', answer: 'Supports length, weight/mass, temperature scale systems, area units, volumetric quantities, time intervals, and data storage capacities.' }
+    ],
+    howToUse: ['Select the measurement category chip.', 'Choose target units in the From and To dropdown selectors.', 'Enter the starting value to see the converted output.', 'Optionally click the swap button to reverse direction.'],
+    relatedTools: ['age-calculator', 'percentage-calculator']
+  },
+  {
+    name: 'Prime Checker & Generator',
+    slug: 'prime-checker',
+    description: 'Verify if a number is prime and generate prime numbers up to a limit.',
+    longDescription: 'Check whether a number is prime (divisible only by 1 and itself) or composite. Generates a list of primes up to a maximum of 10,000.',
+    category: 'number-tools',
+    tags: ['math', 'prime checker', 'prime numbers', 'primes generator', 'factors'],
+    keywords: ['prime checker', 'is this number prime', 'prime number generator', 'sieve of eratosthenes online', 'check prime number list'],
+    icon: 'binary',
+    executionType: 'client',
+    dateAdded: '2026-07-14',
+    isNew: true,
+    metaTitle: 'Prime Checker & Generator – Is Number Prime? | Toolkit',
+    metaDescription: 'Free online prime checker. Verify if a number is prime and generate lists of prime numbers up to 10,000 instantly.',
+    h1: 'Prime Checker & Generator',
+    intro: 'Check the primality of any integer or compile tables of prime numbers offline.',
+    faqs: [
+      { question: 'What is a prime number?', answer: 'A prime number is a positive integer greater than 1 that has no positive divisors other than 1 and itself.' }
+    ],
+    howToUse: ['Use the checker tab to test specific numbers.', 'Or use the generator tab to list all primes up to a set range.', 'Review divisor details.'],
+    relatedTools: ['factors-calculator', 'gcd-lcm-calculator']
+  },
+  {
+    name: 'Factors & Divisors Calculator',
+    slug: 'factors-calculator',
+    description: 'Calculate all factors of a number and its prime factorization.',
+    longDescription: 'Compute all divisors/factors of an integer. Displays the total number of factors, factor sums, product, and prime factorization exponents.',
+    category: 'number-tools',
+    tags: ['factors', 'divisors', 'prime factorization', 'math', 'calculator'],
+    keywords: ['factors calculator', 'find all factors of a number', 'prime factorization calculator', 'divisors sum product', 'math factors finder'],
+    icon: 'binary',
+    executionType: 'client',
+    dateAdded: '2026-07-14',
+    isNew: true,
+    metaTitle: 'Factors & Divisors Calculator – Prime Factorization | Toolkit',
+    metaDescription: 'Free online factors calculator. Find all divisors of a number, calculate factor sums, and get prime factorization structures.',
+    h1: 'Factors & Divisors Calculator',
+    intro: 'Enter an integer to calculate its complete list of divisors, factorization powers, and mathematical sums.',
+    faqs: [
+      { question: 'What is prime factorization?', answer: 'Prime factorization is finding which prime numbers multiply together to make the original number.' }
+    ],
+    howToUse: ['Type a positive integer in the input box.', 'Click Calculate Factors.', 'Review factor tables and calculations.'],
+    relatedTools: ['prime-checker', 'gcd-lcm-calculator']
+  },
+  {
+    name: 'GCD & LCM Calculator',
+    slug: 'gcd-lcm-calculator',
+    description: 'Calculate the Greatest Common Divisor and Least Common Multiple of numbers.',
+    longDescription: 'Compute the Greatest Common Divisor (GCD) and Least Common Multiple (LCM) for multiple numbers with step-by-step division steps using the Euclidean algorithm.',
+    category: 'number-tools',
+    tags: ['gcd', 'lcm', 'greatest common divisor', 'least common multiple', 'math', 'calculator'],
+    keywords: ['gcd calculator', 'lcm calculator', 'greatest common divisor online', 'least common multiple finder', 'euclidean algorithm steps'],
+    icon: 'binary',
+    executionType: 'client',
+    dateAdded: '2026-07-14',
+    isNew: true,
+    metaTitle: 'GCD & LCM Calculator – Greatest Common Divisor | Toolkit',
+    metaDescription: 'Free online GCD & LCM calculator. Calculate greatest common divisor and least common multiple with step-by-step Euclidean divisions.',
+    h1: 'GCD & LCM Calculator',
+    intro: 'Calculate the Greatest Common Divisor and Least Common Multiple of two or more numbers with step-by-step Euclidean division displays.',
+    faqs: [
+      { question: 'How is the GCD used?', answer: 'The GCD is useful for reducing fractions to their lowest terms and finding common scale ratios.' }
+    ],
+    howToUse: ['Enter numbers separated by commas.', 'Click Calculate.', 'Review final values and step-by-step equations.'],
+    relatedTools: ['factors-calculator', 'prime-checker']
+  },
+  {
+    name: 'Number Base Converter',
+    slug: 'number-base-converter',
+    description: 'Convert numbers between binary, octal, decimal, hexadecimal, and custom bases.',
+    longDescription: 'Translate integers between base 2 (binary), base 8 (octal), base 10 (decimal), base 16 (hexadecimal), and custom bases up to 36.',
+    category: 'number-tools',
+    tags: ['base converter', 'binary', 'hexadecimal', 'octal', 'decimal', 'custom base', 'math'],
+    keywords: ['number base converter', 'decimal to binary', 'hex to dec converter', 'base converter online', 'binary octal decimal hex'],
+    icon: 'binary',
+    executionType: 'client',
+    dateAdded: '2026-07-14',
+    isNew: true,
+    metaTitle: 'Number Base Converter – Binary, Dec, Hex, Octal | Toolkit',
+    metaDescription: 'Free online number base converter. Convert integers between binary, octal, decimal, hexadecimal, and custom bases up to 36.',
+    h1: 'Number Base Converter',
+    intro: 'Convert values between different base representations with custom base settings.',
+    faqs: [
+      { question: 'What is the maximum supported base?', answer: 'Supports custom bases from base 2 (binary) up to base 36 (using digits 0-9 and letters A-Z).' }
+    ],
+    howToUse: ['Type your starting number value.', 'Select the input base and target base.', 'Review base translation values.'],
+    relatedTools: ['scientific-notation-converter', 'roman-numeral-converter']
+  },
+  {
+    name: 'Scientific Notation Converter',
+    slug: 'scientific-notation-converter',
+    description: 'Convert numbers to scientific notation (E-notation) and vice versa.',
+    longDescription: 'Convert standard decimal numbers to scientific notation (e.g. 1.25 × 10^5) and E-notation, and decode scientific numbers back to decimal numbers.',
+    category: 'number-tools',
+    tags: ['scientific notation', 'e-notation', 'exponential', 'decimal', 'math', 'calculator'],
+    keywords: ['scientific notation converter', 'e notation converter', 'convert scientific notation to decimal', 'exponent calculator online', 'decimal to scientific'],
+    icon: 'binary',
+    executionType: 'client',
+    dateAdded: '2026-07-14',
+    isNew: true,
+    metaTitle: 'Scientific Notation Converter – Exponents | Toolkit',
+    metaDescription: 'Free online scientific notation converter. Convert decimal numbers to scientific notation/E-notation and back instantly.',
+    h1: 'Scientific Notation Converter',
+    intro: 'Translate standard decimal numbers to exponential scientific expressions and vice versa.',
+    faqs: [
+      { question: 'What is scientific notation?', answer: 'Scientific notation is a way of writing very large or very small numbers using coefficients multiplied by powers of 10.' }
+    ],
+    howToUse: ['Choose conversion direction using the tabs.', 'Enter the starting decimal value or scientific expression.', 'Review and copy output formats.'],
+    relatedTools: ['number-base-converter', 'roman-numeral-converter']
+  },
+  {
+    name: 'Roman Numeral Converter',
+    slug: 'roman-numeral-converter',
+    description: 'Convert decimal integers to Roman numerals and decode Roman numerals to decimals.',
+    longDescription: 'Translate standard decimal integers (between 1 and 3999) to Roman numerals, and decode Roman numeral strings back into decimal integers.',
+    category: 'number-tools',
+    tags: ['roman numerals', 'roman converter', 'decimal to roman', 'decode roman', 'math'],
+    keywords: ['roman numeral converter', 'decimal to roman numerals', 'decode roman numerals online', 'roman converter', 'standard numbers to roman'],
+    icon: 'binary',
+    executionType: 'client',
+    dateAdded: '2026-07-14',
+    isNew: true,
+    metaTitle: 'Roman Numeral Converter – Decimal to Roman | Toolkit',
+    metaDescription: 'Free online Roman numeral converter. Translate standard decimal numbers (1-3999) to Roman numerals and decode Roman numerals to integers.',
+    h1: 'Roman Numeral Converter',
+    intro: 'Convert standard numbers to Roman numeral symbols and parse Roman numerals to decimal integers.',
+    faqs: [
+      { question: 'What is the range limit?', answer: 'Supports integers from 1 (I) to 3999 (MMMCMXCIX).' }
+    ],
+    howToUse: ['Select the Decimal-to-Roman or Roman-to-Decimal tab.', 'Enter your value.', 'Copy the calculated translation.'],
+    relatedTools: ['number-base-converter', 'scientific-notation-converter']
+  },
 ];
 
 export function getToolBySlug(slug: string): Tool | undefined {

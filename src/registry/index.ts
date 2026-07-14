@@ -90,6 +90,13 @@ import { EmojiPickerTool } from "@/src/ui/tool/emoji-picker";
 import { MorseConverterTool } from "@/src/ui/tool/morse-converter";
 import { RemoveSpecialCharactersTool } from "@/src/ui/tool/remove-special-characters";
 import { TextBinaryConverterTool } from "@/src/ui/tool/text-binary-converter";
+import { UnitConverterTool } from "@/src/ui/tool/unit-converter";
+import { PrimeCheckerTool } from "@/src/ui/tool/prime-checker";
+import { FactorsCalculatorTool } from "@/src/ui/tool/factors-calculator";
+import { GcdLcmCalculatorTool } from "@/src/ui/tool/gcd-lcm-calculator";
+import { NumberBaseConverterTool } from "@/src/ui/tool/number-base-converter";
+import { ScientificNotationConverterTool } from "@/src/ui/tool/scientific-notation-converter";
+import { RomanNumeralConverterTool } from "@/src/ui/tool/roman-numeral-converter";
 
 export const toolRegistry: Record<string, ComponentType> = {
   "age-calculator": AgeCalculatorTool,
@@ -193,6 +200,13 @@ export const toolRegistry: Record<string, ComponentType> = {
   "unicode-inspector": UnicodeInspectorTool,
   "emoji-picker": EmojiPickerTool,
   "morse-converter": MorseConverterTool,
+  "unit-converter": UnitConverterTool,
+  "prime-checker": PrimeCheckerTool,
+  "factors-calculator": FactorsCalculatorTool,
+  "gcd-lcm-calculator": GcdLcmCalculatorTool,
+  "number-base-converter": NumberBaseConverterTool,
+  "scientific-notation-converter": ScientificNotationConverterTool,
+  "roman-numeral-converter": RomanNumeralConverterTool,
 };
 
 export function getToolComponent(slug: string): ComponentType | null {
