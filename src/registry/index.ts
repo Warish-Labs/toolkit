@@ -62,6 +62,12 @@ import { CssFormatterMinifierTool } from "@/src/ui/tool/css-formatter-minifier";
 import { SqlFormatterTool } from "@/src/ui/tool/sql-formatter";
 import { UrlEncoderDecoderTool } from "@/src/ui/tool/url-encoder-decoder";
 import { JwtDecoderTool } from "@/src/ui/tool/jwt-decoder";
+import { NanoidGeneratorTool } from "@/src/ui/tool/nanoid-generator";
+import { SlugGeneratorTool } from "@/src/ui/tool/slug-generator";
+import { RegexTesterTool } from "@/src/ui/tool/regex-tester";
+import { CronGeneratorTool } from "@/src/ui/tool/cron-generator";
+import { UnixTimestampConverterTool } from "@/src/ui/tool/unix-timestamp-converter";
+import { RandomGeneratorTool } from "@/src/ui/tool/random-generator";
 
 // --- Text Tools (Batch 4) ---
 import { TextAnalyzerTool } from "@/src/ui/tool/text-analyzer";
@@ -145,6 +151,12 @@ export const toolRegistry: Record<string, ComponentType> = {
   "sql-minifier": SqlFormatterTool,
   "url-encoder-decoder": UrlEncoderDecoderTool,
   "jwt-decoder": JwtDecoderTool,
+  "nanoid-generator": NanoidGeneratorTool,
+  "slug-generator": SlugGeneratorTool,
+  "regex-tester": RegexTesterTool,
+  "cron-generator": CronGeneratorTool,
+  "unix-timestamp-converter": UnixTimestampConverterTool,
+  "random-generator": RandomGeneratorTool,
 
   // --- Text Tools (Batch 4) ---
   "text-analyzer": TextAnalyzerTool,
