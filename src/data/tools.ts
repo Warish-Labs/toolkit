@@ -1964,6 +1964,117 @@ export const tools: Tool[] = [
     howToUse: ['Select the "Text → Binary" or "Binary → Text" tab.', 'Enter or paste your input.', 'View the converted output and copy it.'],
     relatedTools: ['base64-encoder-decoder', 'hash-generator']
   },
+  {
+    name: 'Extended Case Converter',
+    slug: 'case-converter-extended',
+    description: 'Convert text to camelCase, PascalCase, snake_case, kebab-case, or alternating case formats.',
+    longDescription: 'An advanced case converter that supports modern coding and styling casing models. Easily translate text into camelCase, PascalCase, snake_case, kebab-case, CONSTANT_CASE, Sentence case, Title Case, and toggle or alternating cases.',
+    category: 'text-tools',
+    tags: ['case converter', 'camelcase', 'snake_case', 'kebab-case', 'title case', 'text formatting'],
+    keywords: ['camelcase converter', 'snake case converter online', 'kebab case generator', 'convert text case coding', 'title case sentence case'],
+    icon: 'type',
+    executionType: 'client',
+    dateAdded: '2026-07-14',
+    isNew: true,
+    metaTitle: 'Extended Case Converter – Camel, Snake, Kebab | Toolkit',
+    metaDescription: 'Free online extended case converter. Format text to camelCase, PascalCase, snake_case, kebab-case, CONSTANT_CASE, or alternating case instantly.',
+    h1: 'Extended Case Converter',
+    intro: 'Transform phrases and strings into programming cases (camel, snake, kebab) and writing styles.',
+    faqs: [
+      { question: 'What is camelCase used for?', answer: 'camelCase is commonly used for variable names in JavaScript, Java, and other languages.' },
+      { question: 'What is snake_case used for?', answer: 'snake_case is used in Python variable names and database field keys.' }
+    ],
+    howToUse: ['Type your source text in the input box.', 'Select your target casing mode button.', 'Copy the converted output.'],
+    relatedTools: ['case-converter', 'slug-generator']
+  },
+  {
+    name: 'Text Diff Tool',
+    slug: 'text-diff',
+    description: 'Compare two text strings line by line to highlight additions and deletions.',
+    longDescription: 'Compare original and modified texts line by line. Highlights differences, showing additions in green and deletions in red. Perfect for comparing code, files, or documents.',
+    category: 'text-tools',
+    tags: ['diff', 'compare text', 'text diff', 'file comparison', 'developer'],
+    keywords: ['text diff online', 'compare two texts', 'line diff checker', 'difference highlighted text', 'text comparison tool'],
+    icon: 'type',
+    executionType: 'client',
+    dateAdded: '2026-07-14',
+    isNew: true,
+    metaTitle: 'Text Diff Tool – Compare Texts Online | Toolkit',
+    metaDescription: 'Free online text diff tool. Compare two blocks of text or code line-by-line and view highlighted additions and deletions instantly.',
+    h1: 'Text Diff Checker',
+    intro: 'Paste original and modified texts to highlight additions, deletions, and differences line by line.',
+    faqs: [
+      { question: 'How is the comparison done?', answer: 'It uses a Longest Common Subsequence (LCS) algorithm to align lines and compute differences.' }
+    ],
+    howToUse: ['Paste original text in Original box (A).', 'Paste modified text in Modified box (B).', 'Click Compare to see the highlighted differences.'],
+    relatedTools: ['find-replace', 'sort-lines']
+  },
+  {
+    name: 'Unicode Inspector',
+    slug: 'unicode-inspector',
+    description: 'Inspect characters of a string to see their Unicode code points and HTML entities.',
+    longDescription: 'Detailed character-by-character analysis of any text. Inspect Unicode points, decimal values, hex codes, and HTML entity values. Supports multi-byte emojis.',
+    category: 'text-tools',
+    tags: ['unicode', 'inspect character', 'unicode point', 'html entity', 'developer'],
+    keywords: ['unicode inspector', 'inspect unicode characters', 'html entity converter', 'character code point lookup', 'find unicode code'],
+    icon: 'type',
+    executionType: 'client',
+    dateAdded: '2026-07-14',
+    isNew: true,
+    metaTitle: 'Unicode Inspector – Character Code Points | Toolkit',
+    metaDescription: 'Free online Unicode inspector. Inspect character symbols, Unicode code points, decimal representations, hex values, and HTML entities.',
+    h1: 'Unicode Character Inspector',
+    intro: 'Analyze text character-by-character to inspect official Unicode code points, hex values, and HTML entities.',
+    faqs: [
+      { question: 'Does this support emojis?', answer: 'Yes. Emojis and other multi-byte characters are parsed correctly using surrogate pair inspection.' }
+    ],
+    howToUse: ['Type or paste your text in the input box.', 'Review character codes listed in the table.', 'Copy HTML entity values as needed.'],
+    relatedTools: ['ascii-table', 'url-encoder-decoder']
+  },
+  {
+    name: 'Emoji Picker & Search',
+    slug: 'emoji-picker',
+    description: 'Browse, search, and copy emojis to your clipboard instantly.',
+    longDescription: 'Explore a categorized list of emojis (smileys, animals, food, objects) with search filters. Copy any emoji to your clipboard on click.',
+    category: 'text-tools',
+    tags: ['emoji', 'picker', 'copy emoji', 'search emoji', 'smileys'],
+    keywords: ['emoji picker', 'search emojis online', 'copy paste emojis', 'find emoji symbols', 'emoticons list'],
+    icon: 'type',
+    executionType: 'client',
+    dateAdded: '2026-07-14',
+    isNew: true,
+    metaTitle: 'Emoji Picker – Search & Copy Emojis Online | Toolkit',
+    metaDescription: 'Free online emoji picker. Search and browse categorized emojis (emotions, animals, food, flags, symbols) and copy on click.',
+    h1: 'Emoji Picker & Search',
+    intro: 'Browse categories or type queries to search and copy any emoji to your clipboard instantly.',
+    faqs: [
+      { question: 'How do I copy an emoji?', answer: 'Simply click or tap on the emoji block to copy it to your device clipboard.' }
+    ],
+    howToUse: ['Type search queries in the search bar or scroll through categories.', 'Click on an emoji to copy it.', 'Paste it anywhere.'],
+    relatedTools: ['ascii-art-generator', 'lorem-ipsum-generator']
+  },
+  {
+    name: 'Morse Code Converter',
+    slug: 'morse-converter',
+    description: 'Translate text to Morse code or decode Morse back to readable text.',
+    longDescription: 'Translate standard text to Morse code using dots and dashes, or decode Morse code strings back into readable text.',
+    category: 'text-tools',
+    tags: ['morse', 'morse code', 'converter', 'encode', 'decode', 'translator'],
+    keywords: ['morse code converter', 'translate morse code', 'text to morse code', 'morse code decoder online', 'morse translator'],
+    icon: 'type',
+    executionType: 'client',
+    dateAdded: '2026-07-14',
+    isNew: true,
+    metaTitle: 'Morse Code Converter – Encode & Decode Online | Toolkit',
+    metaDescription: 'Free online Morse code converter. Translate standard text to Morse code dots/dashes, or decode Morse strings back to readable characters.',
+    h1: 'Morse Code Converter',
+    intro: 'Switch tabs to translate standard text messages to Morse code, or decode Morse code back to text.',
+    faqs: [
+      { question: 'How are words separated in Morse code?', answer: 'In standard translation outputs, letters are separated by single spaces, and words are separated by a forward slash (/).' }
+    ],
+    howToUse: ['Choose the Encode (Text to Morse) or Decode (Morse to Text) tab.', 'Type your message or Morse code string.', 'Review and copy the result.'],
+    relatedTools: ['text-binary-converter', 'base64-encoder-decoder']
+  },
 ];
 
 export function getToolBySlug(slug: string): Tool | undefined {

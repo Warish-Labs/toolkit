@@ -83,6 +83,11 @@ import { ReverseTextTool } from "@/src/ui/tool/reverse-text";
 import { FindReplaceTool } from "@/src/ui/tool/find-replace";
 import { TextRepeaterTool } from "@/src/ui/tool/text-repeater";
 import { TrimWhitespaceTool } from "@/src/ui/tool/trim-whitespace";
+import { CaseConverterExtendedTool } from "@/src/ui/tool/case-converter-extended";
+import { TextDiffTool } from "@/src/ui/tool/text-diff";
+import { UnicodeInspectorTool } from "@/src/ui/tool/unicode-inspector";
+import { EmojiPickerTool } from "@/src/ui/tool/emoji-picker";
+import { MorseConverterTool } from "@/src/ui/tool/morse-converter";
 import { RemoveSpecialCharactersTool } from "@/src/ui/tool/remove-special-characters";
 import { TextBinaryConverterTool } from "@/src/ui/tool/text-binary-converter";
 
@@ -183,6 +188,11 @@ export const toolRegistry: Record<string, ComponentType> = {
   "trim-whitespace": TrimWhitespaceTool,
   "remove-special-characters": RemoveSpecialCharactersTool,
   "text-binary-converter": TextBinaryConverterTool,
+  "case-converter-extended": CaseConverterExtendedTool,
+  "text-diff": TextDiffTool,
+  "unicode-inspector": UnicodeInspectorTool,
+  "emoji-picker": EmojiPickerTool,
+  "morse-converter": MorseConverterTool,
 };
 
 export function getToolComponent(slug: string): ComponentType | null {
