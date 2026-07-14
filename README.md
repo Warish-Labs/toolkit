@@ -9,7 +9,7 @@
 [![Tailwind CSS](https://img.shields.io/badge/Styling-Tailwind%20CSS%20v4-38bdf8?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/)
 [![Vercel](https://img.shields.io/badge/Hosting-Vercel-black?style=flat-square&logo=vercel)](https://vercel.com)
 
-A fast, private, browser-first utility platform by **WarishLabs**. 100% of calculations run client-side in the user's browser — no data is ever uploaded or stored on servers.
+A fast, private, browser-first utility platform by **WarishLabs** containing over 150+ professional tools across 17 specialized batches (Calculators, Converters, Developer Utilities, SEO Studios, Productivity suites, AI Prompt Builders, and Browser API demos). 100% of calculations run client-side in the user's browser — no data is ever uploaded or stored on servers.
 
 ---
 

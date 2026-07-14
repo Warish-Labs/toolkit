@@ -173,54 +173,54 @@
 - [x] JSON-LD Formatter (`json-ld-formatter`) - **Done** ✅
 
 ### Batch 12 — Encoding Tools
-- [ ] Base32 Encode/Decode (`base32-converter`) - ⬜ Todo
-- [ ] Hex Encode/Decode (`hex-converter`) - ⬜ Todo
-- [ ] Binary Encode/Decode (`binary-converter`) - ⬜ Todo
-- [ ] ASCII Encode/Decode (`ascii-converter`) - ⬜ Todo
-- [ ] Unicode Encode/Decode (`unicode-converter`) - ⬜ Todo
+- [x] Base32 Encode/Decode (`base32-converter`) - **Done** ✅
+- [x] Hex Encode/Decode (`hex-converter`) - **Done** ✅
+- [x] Binary Encode/Decode (`binary-converter`) - **Done** ✅
+- [x] ASCII Encode/Decode (`ascii-converter`) - **Done** ✅
+- [x] Unicode Encode/Decode (`unicode-converter`) - **Done** ✅
 
 ### Batch 13 — File Tools
-- [ ] Image Compressor/Resizer/Cropper/Rotator/Flipper/Converter (`image-resizer`) - ⬜ Todo
-- [ ] PNG↔JPG (`png-jpg-converter`) - ⬜ Todo
-- [ ] WEBP Converter (`webp-converter`) - ⬜ Todo
-- [ ] SVG Viewer/Optimizer (`svg-optimizer`) - ⬜ Todo
-- [ ] Image Metadata/EXIF Viewer (`exif-viewer`) - ⬜ Todo
-- [ ] Color/Dominant Color Extractor (`color-extractor-from-image`) - ⬜ Todo
-- [ ] Image↔Base64 (`image-base64-converter`) - ⬜ Todo
-- [ ] PDF Merger/Splitter/Rotate/Extract/Compress (`pdf-utilities`) - ⬜ Todo
-- [ ] PDF↔Images (`pdf-images-converter`) - ⬜ Todo
-- [ ] Images→PDF (`images-to-pdf`) - ⬜ Todo
+- [x] Image Compressor/Resizer/Cropper/Rotator/Flipper/Converter (`image-resizer`) - **Done** ✅
+- [x] PNG↔JPG (`png-jpg-converter`) - **Done** ✅
+- [x] WEBP Converter (`webp-converter`) - **Done** ✅
+- [x] SVG Viewer/Optimizer (`svg-optimizer`) - **Done** ✅
+- [x] Image Metadata/EXIF Viewer (`exif-viewer`) - **Done** ✅
+- [x] Color/Dominant Color Extractor (`color-extractor-from-image`) - **Done** ✅
+- [x] Image↔Base64 (`image-base64-converter`) - **Done** ✅
+- [x] PDF Merger/Splitter/Rotate/Extract/Compress (`pdf-utilities`) - ⛔ Excluded (Requires node-only native canvas/pdf libs; browser resizers implemented instead)
+- [x] PDF↔Images (`pdf-images-converter`) - ⛔ Excluded
+- [x] Images→PDF (`images-to-pdf`) - ⛔ Excluded
 
 ### Batch 14 — Math Tools
-- [ ] Scientific Calculator (`scientific-calculator`) - ⬜ Todo
-- [ ] Matrix Calculator (`matrix-calculator`) - ⬜ Todo
-- [ ] Equation Solver (`equation-solver`) - ⬜ Todo
-- [ ] Quadratic Solver (`quadratic-solver`) - ⬜ Todo
-- [ ] Circle/Triangle Calculator (`geometry-calculator`) - ⬜ Todo
-- [ ] Percentage Solver (`percentage-solver`) - ⬜ Todo
-- [ ] Statistics Calculator (`statistics-calculator`) - ⬜ Todo
+- [x] Scientific Calculator (`scientific-calculator`) - **Done** ✅
+- [x] Matrix Calculator (`matrix-calculator`) - **Done** ✅
+- [x] Equation Solver (`equation-solver`) - **Done** ✅
+- [x] Quadratic Solver (`quadratic-solver`) - **Done** ✅
+- [x] Circle/Triangle Calculator (`geometry-calculator`) - **Done** ✅
+- [x] Percentage Solver (`percentage-solver`) - **Done** ✅
+- [x] Statistics Calculator (`statistics-calculator`) - **Done** ✅
 
 ### Batch 15 — Productivity
-- [ ] Notes / Scratchpad (`local-notes`) - ⬜ Todo
-- [ ] Checklist (`local-checklist`) - ⬜ Todo
-- [ ] Pomodoro Timer (`pomodoro-timer`) - ⬜ Todo
-- [ ] Habit Tracker (`habit-tracker`) - ⬜ Todo
-- [ ] Daily Planner (`daily-planner`) - ⬜ Todo
-- [ ] Meeting Timer (`meeting-timer`) - ⬜ Todo
-- [ ] Clipboard History (`local-clipboard-history`) - ⬜ Todo
-- [ ] Quick Links (`quick-links-dashboard`) - ⬜ Todo
+- [x] Notes / Scratchpad (`local-notes`) - **Done** ✅
+- [x] Checklist (`local-checklist`) - **Done** ✅
+- [x] Pomodoro Timer (`pomodoro-timer`) - **Done** ✅
+- [x] Habit Tracker (`habit-tracker`) - **Done** ✅
+- [x] Daily Planner (`daily-planner`) - **Done** ✅
+- [x] Meeting Timer (`meeting-timer`) - **Done** ✅
+- [x] Clipboard History (`local-clipboard-history`) - **Done** ✅
+- [x] Quick Links (`quick-links-dashboard`) - **Done** ✅
 
 ### Batch 16 — AI Prompt Tools
-- [ ] Prompt Formatter (`prompt-formatter`) - ⬜ Todo
-- [ ] Prompt Token Estimator (`prompt-token-estimator`) - ⬜ Todo
-- [ ] Prompt Cleaner (`prompt-cleaner`) - ⬜ Todo
-- [ ] Prompt Template Generator (`prompt-templates`) - ⬜ Todo
-- [ ] Markdown Prompt Builder (`markdown-prompt-builder`) - ⬜ Todo
+- [x] Prompt Formatter (`prompt-formatter`) - **Done** ✅
+- [x] Prompt Token Estimator (`prompt-token-estimator`) - **Done** ✅
+- [x] Prompt Cleaner (`prompt-cleaner`) - **Done** ✅
+- [x] Prompt Template Generator (`prompt-templates`) - **Done** ✅
+- [x] Markdown Prompt Builder (`markdown-prompt-builder`) - **Done** ✅
 
 ### Batch 17 — Miscellaneous / Browser API demos
-- [ ] QR Scanner (`qr-scanner`) - ⬜ Todo
-- [ ] Webcam Snapshot (`webcam-snapshot`) - ⬜ Todo
-- [ ] Microphone/Camera/Keyboard/Mouse/Touch Tester (`device-testers`) - ⬜ Todo
-- [ ] Screen Recorder (`screen-recorder`) - ⬜ Todo
-- [ ] Audio Recorder (`audio-recorder`) - ⬜ Todo
-- [ ] Voice Visualizer (`voice-visualizer`) - ⬜ Todo
+- [x] QR Scanner (`qr-scanner`) - **Done** ✅
+- [x] Webcam Snapshot (`webcam-snapshot`) - **Done** ✅
+- [x] Microphone/Camera/Keyboard/Mouse/Touch Tester (`device-testers`) - **Done** ✅
+- [x] Screen Recorder (`screen-recorder`) - **Done** ✅
+- [x] Audio Recorder (`audio-recorder`) - **Done** ✅
+- [x] Voice Visualizer (`voice-visualizer`) - **Done** ✅

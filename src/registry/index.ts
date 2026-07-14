@@ -106,6 +106,12 @@ import { ClipboardInspectorTool } from "@/src/ui/tool/clipboard-inspector";
 import { CssGeneratorTool } from "@/src/ui/tool/css-generator";
 import { ColorStudioTool } from "@/src/ui/tool/color-studio";
 import { SeoStudioTool } from "@/src/ui/tool/seo-studio";
+import { EncodingStudioTool } from "@/src/ui/tool/encoding-studio";
+import { ImageStudioTool } from "@/src/ui/tool/image-studio";
+import { MathStudioTool } from "@/src/ui/tool/math-studio";
+import { ProductivityStudioTool } from "@/src/ui/tool/productivity-studio";
+import { PromptStudioTool } from "@/src/ui/tool/prompt-studio";
+import { BrowserToolsStudioTool } from "@/src/ui/tool/browser-tools-studio";
 
 export const toolRegistry: Record<string, ComponentType> = {
   "age-calculator": AgeCalculatorTool,
@@ -256,6 +262,54 @@ export const toolRegistry: Record<string, ComponentType> = {
   "canonical-url-generator": SeoStudioTool,
   "schema-generator": SeoStudioTool,
   "json-ld-formatter": SeoStudioTool,
+  
+  // --- Batch 12: Encoding ---
+  "base32-converter": EncodingStudioTool,
+  "hex-converter": EncodingStudioTool,
+  "binary-converter": EncodingStudioTool,
+  "ascii-converter": EncodingStudioTool,
+  "unicode-converter": EncodingStudioTool,
+
+  // --- Batch 13: File / Image ---
+  "image-resizer": ImageStudioTool,
+  "png-jpg-converter": ImageStudioTool,
+  "webp-converter": ImageStudioTool,
+  "image-base64-converter": ImageStudioTool,
+  "color-extractor-from-image": ImageStudioTool,
+
+  // --- Batch 14: Math ---
+  "scientific-calculator": MathStudioTool,
+  "matrix-calculator": MathStudioTool,
+  "equation-solver": MathStudioTool,
+  "quadratic-solver": MathStudioTool,
+  "geometry-calculator": MathStudioTool,
+  "percentage-solver": MathStudioTool,
+  "statistics-calculator": MathStudioTool,
+
+  // --- Batch 15: Productivity ---
+  "local-notes": ProductivityStudioTool,
+  "local-checklist": ProductivityStudioTool,
+  "pomodoro-timer": ProductivityStudioTool,
+  "habit-tracker": ProductivityStudioTool,
+  "daily-planner": ProductivityStudioTool,
+  "meeting-timer": ProductivityStudioTool,
+  "local-clipboard-history": ProductivityStudioTool,
+  "quick-links-dashboard": ProductivityStudioTool,
+
+  // --- Batch 16: AI Prompts ---
+  "prompt-formatter": PromptStudioTool,
+  "prompt-token-estimator": PromptStudioTool,
+  "prompt-cleaner": PromptStudioTool,
+  "prompt-templates": PromptStudioTool,
+  "markdown-prompt-builder": PromptStudioTool,
+
+  // --- Batch 17: Browser/Misc ---
+  "qr-scanner": BrowserToolsStudioTool,
+  "webcam-snapshot": BrowserToolsStudioTool,
+  "device-testers": BrowserToolsStudioTool,
+  "screen-recorder": BrowserToolsStudioTool,
+  "audio-recorder": BrowserToolsStudioTool,
+  "voice-visualizer": BrowserToolsStudioTool,
 };
 
 export function getToolComponent(slug: string): ComponentType | null {
