@@ -76,21 +76,21 @@
 - [x] SQL Minifier (`sql-minifier`) - **Done** ✅
 - [x] URL Encode/Decode (`url-encoder-decoder`) - **Done** ✅
 - [x] JWT Decoder (`jwt-decoder`) - **Done** ✅
-- [ ] UUID/Nano ID Variants (`nanoid-generator`) - ⬜ Todo
-- [ ] Slug Generator (`slug-generator`) - ⬜ Todo
-- [ ] Regex Tester + Cheat Sheet (`regex-tester`) - ⬜ Todo
-- [ ] Cron Expression Generator (`cron-generator`) - ⬜ Todo
-- [ ] Unix Timestamp/Epoch Converter (`unix-timestamp-converter`) - ⬜ Todo
-- [ ] Hash Checker (`hash-checker`) - ⬜ Todo
-- [ ] SHA/MD5/HMAC Generators (`hmac-generator`) - ⬜ Todo
-- [ ] Color Picker + HEX/RGB/HSL conversions (`color-picker`) - ⬜ Todo
-- [ ] Color Palette Generator (`color-palette-generator`) - ⬜ Todo
-- [ ] Lorem Ipsum Generator (`lorem-ipsum-generator`) - ⬜ Todo
-- [ ] Random Password/String/Number Generator (`random-generator`) - ⬜ Todo
-- [ ] QR Code Generator (`qr-code-generator`) - ⬜ Todo
-- [ ] Barcode Generator (`barcode-generator`) - ⬜ Todo
-- [ ] ASCII Table (`ascii-table`) - ⬜ Todo
-- [ ] ASCII Art Generator (`ascii-art-generator`) - ⬜ Todo
+- [x] UUID/Nano ID Variants (`nanoid-generator`) - **Done** ✅
+- [x] Slug Generator (`slug-generator`) - **Done** ✅
+- [x] Regex Tester + Cheat Sheet (`regex-tester`) - **Done** ✅
+- [x] Cron Expression Generator (`cron-generator`) - **Done** ✅
+- [x] Unix Timestamp/Epoch Converter (`unix-timestamp-converter`) - **Done** ✅
+- [x] Hash Checker (`hash-checker`) - **Done** ✅
+- [x] SHA/MD5/HMAC Generators (`hmac-generator`) - **Done** ✅
+- [x] Color Picker + HEX/RGB/HSL conversions (`color-picker`) - **Done** ✅
+- [x] Color Palette Generator (`color-palette-generator`) - **Done** ✅
+- [x] Lorem Ipsum Generator (`lorem-ipsum-generator`) - **Done** ✅
+- [x] Random Password/String/Number Generator (`random-generator`) - **Done** ✅
+- [x] QR Code Generator (`qr-code-generator`) - **Done** ✅
+- [x] Barcode Generator (`barcode-generator`) - **Done** ✅
+- [x] ASCII Table (`ascii-table`) - **Done** ✅
+- [x] ASCII Art Generator (`ascii-art-generator`) - **Done** ✅
 
 ### Batch 4 — Text Tools
 - [x] Text Analyzer (`text-analyzer`) - **Done** ✅
@@ -103,11 +103,11 @@
 - [x] Trim Whitespace (`trim-whitespace`) - **Done** ✅
 - [x] Remove Special Characters (`remove-special-characters`) - **Done** ✅
 - [x] Text ↔ Binary Converter (`text-binary-converter`) - **Done** ✅
-- [ ] Case Converter Extended (`case-converter-extended`) - ⬜ Todo
-- [ ] Text Diff (`text-diff`) - ⬜ Todo
-- [ ] Unicode Inspector (`unicode-inspector`) - ⬜ Todo
-- [ ] Emoji Picker (`emoji-picker`) - ⬜ Todo
-- [ ] Morse Encoder/Decoder (`morse-converter`) - ⬜ Todo
+- [x] Case Converter Extended (`case-converter-extended`) - **Done** ✅
+- [x] Text Diff (`text-diff`) - **Done** ✅
+- [x] Unicode Inspector (`unicode-inspector`) - **Done** ✅
+- [x] Emoji Picker (`emoji-picker`) - **Done** ✅
+- [x] Morse Encoder/Decoder (`morse-converter`) - **Done** ✅
 
 ### Batch 5 — Unit Converters
 - [ ] Unit Converter (Length, Weight, Area, Volume, Speed, Temperature, Time, Pressure, Force, Torque, Power, Energy, Frequency, Fuel Economy, Storage Units, Data Transfer Speed, Angle, Number Base) (`unit-converter`) - ⬜ Todo
