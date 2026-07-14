@@ -140,18 +140,18 @@
 - [x] Touch Support Checker (`touch-tester`) - **Done** ✅
 
 ### Batch 9 — CSS Generators
-- [ ] Box Shadow (`css-box-shadow-generator`) - ⬜ Todo
-- [ ] Border Radius (`css-border-radius-generator`) - ⬜ Todo
-- [ ] Glassmorphism (`css-glassmorphism-generator`) - ⬜ Todo
-- [ ] Neumorphism (`css-neumorphism-generator`) - ⬜ Todo
-- [ ] Gradient (`css-gradient-generator`) - ⬜ Todo
-- [ ] Flexbox (`css-flexbox-generator`) - ⬜ Todo
-- [ ] Grid (`css-grid-generator`) - ⬜ Todo
-- [ ] Transform (`css-transform-generator`) - ⬜ Todo
-- [ ] Animation (`css-animation-generator`) - ⬜ Todo
-- [ ] Clamp (`css-clamp-generator`) - ⬜ Todo
-- [ ] CSS Filter (`css-filter-generator`) - ⬜ Todo
-- [ ] Clip Path (`css-clip-path-generator`) - ⬜ Todo
+- [x] Box Shadow (`css-box-shadow-generator`) - **Done** ✅
+- [x] Border Radius (`css-border-radius-generator`) - **Done** ✅
+- [x] Glassmorphism (`css-glassmorphism-generator`) - **Done** ✅
+- [x] Neumorphism (`css-neumorphism-generator`) - **Done** ✅
+- [x] Gradient (`css-gradient-generator`) - **Done** ✅
+- [x] Flexbox (`css-flexbox-generator`) - **Done** ✅
+- [x] Grid (`css-grid-generator`) - **Done** ✅
+- [x] Transform (`css-transform-generator`) - **Done** ✅
+- [x] Animation (`css-animation-generator`) - **Done** ✅
+- [x] Clamp (`css-clamp-generator`) - **Done** ✅
+- [x] CSS Filter (`css-filter-generator`) - **Done** ✅
+- [x] Clip Path (`css-clip-path-generator`) - **Done** ✅
 
 ### Batch 10 — Color Tools
 - [ ] Palette Generator (`color-palette-generator`) - ⬜ Todo

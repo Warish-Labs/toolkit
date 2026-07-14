@@ -103,6 +103,7 @@ import { RsaDemoTool } from "@/src/ui/tool/rsa-demo";
 import { BrowserInfoTool } from "@/src/ui/tool/browser-info";
 import { StorageViewerTool } from "@/src/ui/tool/storage-viewer";
 import { ClipboardInspectorTool } from "@/src/ui/tool/clipboard-inspector";
+import { CssGeneratorTool } from "@/src/ui/tool/css-generator";
 
 export const toolRegistry: Record<string, ComponentType> = {
   "age-calculator": AgeCalculatorTool,
@@ -227,6 +228,18 @@ export const toolRegistry: Record<string, ComponentType> = {
   "cookie-viewer": StorageViewerTool,
   "storage-viewer": StorageViewerTool,
   "clipboard-inspector": ClipboardInspectorTool,
+  "css-box-shadow-generator": CssGeneratorTool,
+  "css-border-radius-generator": CssGeneratorTool,
+  "css-glassmorphism-generator": CssGeneratorTool,
+  "css-neumorphism-generator": CssGeneratorTool,
+  "css-gradient-generator": CssGeneratorTool,
+  "css-flexbox-generator": CssGeneratorTool,
+  "css-grid-generator": CssGeneratorTool,
+  "css-transform-generator": CssGeneratorTool,
+  "css-animation-generator": CssGeneratorTool,
+  "css-clamp-generator": CssGeneratorTool,
+  "css-filter-generator": CssGeneratorTool,
+  "css-clip-path-generator": CssGeneratorTool,
 };
 
 export function getToolComponent(slug: string): ComponentType | null {
