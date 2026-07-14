@@ -15,16 +15,17 @@ export const SITE_CONFIG = {
 };
 
 export const READING_SPEED_WPM = 200;
-export const SEARCH_DEBOUNCE_MS = 150;
+export const SEARCH_DEBOUNCE_MS = 220;
 export const SEARCH_FUSE_OPTIONS = {
   keys: [
-    { name: 'name', weight: 0.4 },
-    { name: 'description', weight: 0.2 },
-    { name: 'tags', weight: 0.2 },
-    { name: 'category', weight: 0.1 },
-    { name: 'keywords', weight: 0.1 },
+    { name: 'name',        weight: 0.60 },
+    { name: 'keywords',    weight: 0.25 },
+    { name: 'description', weight: 0.15 },
   ],
-  threshold: 0.3,
-  includeMatches: true,
+  threshold: 0.42,       // 0 = exact-only, 1 = match anything; 0.42 is forgiving but still relevant
+  distance: 200,          // how far into the string a match can be
+  ignoreLocation: true,   // don't penalise matches deep in the string
   minMatchCharLength: 2,
+  includeScore: true,
 } as const;
+
