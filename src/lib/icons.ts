@@ -11,6 +11,17 @@ import {
   LetterText,
   CaseSensitive,
   HelpCircle,
+  Calendar,
+  Ruler,
+  Lock,
+  Monitor,
+  Layers,
+  Palette,
+  Search,
+  FileText,
+  ListTodo,
+  Sparkles,
+  Puzzle,
 } from "lucide-react";
 import type { ComponentType } from "react";
 
@@ -26,6 +37,17 @@ export const iconMap: Record<string, ComponentType<{ className?: string }>> = {
   hash: Hash,
   "letter-text": LetterText,
   "case-sensitive": CaseSensitive,
+  calendar: Calendar,
+  ruler: Ruler,
+  lock: Lock,
+  monitor: Monitor,
+  layers: Layers,
+  palette: Palette,
+  search: Search,
+  "file-text": FileText,
+  "list-todo": ListTodo,
+  sparkles: Sparkles,
+  "toy-brick": Puzzle,
 };
 
 export function getIcon(name: string) {

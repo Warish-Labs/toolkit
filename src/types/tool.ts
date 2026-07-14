@@ -31,6 +31,14 @@ export interface Tool {
   howToUse?: string[];
   /** Related tool slugs */
   relatedTools?: string[];
+  /** SEO specific meta title */
+  metaTitle?: string;
+  /** SEO specific meta description */
+  metaDescription?: string;
+  /** Custom on-page H1 heading */
+  h1?: string;
+  /** On-page introduction paragraph */
+  intro?: string;
 }
 
 export interface Category {

@@ -76,8 +76,8 @@ export function ToolLayout({ tool, children, output }: ToolLayoutProps) {
 
       {/* Title */}
       <div>
-        <h1 className="text-3xl font-bold tracking-tight">{tool.name}</h1>
-        <p className="mt-2 text-muted-foreground text-lg">{tool.description}</p>
+        <h1 className="text-3xl font-bold tracking-tight">{tool.h1 || tool.name}</h1>
+        <p className="mt-2 text-muted-foreground text-lg leading-relaxed">{tool.intro || tool.description}</p>
       </div>
 
       <Separator />
