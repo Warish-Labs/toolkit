@@ -47,7 +47,7 @@ export default function HomePage() {
           {/* Dot-grid overlay */}
           <div className="absolute inset-0 -z-10 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
           
-          <div className="container-content text-center space-y-6 max-w-3xl">
+          <div className="relative z-10 container-content text-center space-y-6 max-w-3xl">
             <Badge variant="outline" className="animate-fade-in border-primary/20 bg-primary/5 px-3 py-1 text-xs text-primary gap-1">
               <Sparkles className="h-3 w-3" />
               100% Client-Side & Private

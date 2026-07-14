@@ -185,7 +185,7 @@ export function HeroNetworkBackground() {
     <canvas
       ref={canvasRef}
       aria-hidden="true"
-      className="absolute inset-0 h-full w-full pointer-events-none -z-10"
+      className="absolute inset-0 h-full w-full pointer-events-none z-0"
     />
   );
 }
