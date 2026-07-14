@@ -49,9 +49,9 @@ function generateSnowflake(): string {
   const sequence = Math.floor(Math.random() * 4096);
   
   // Calculate using BigInt to prevent bitwise limit overflow in JS
-  const snowflakeBigInt = (BigInt(timestamp) << 22n) |
-                           (BigInt(workerId) << 17n) |
-                           (BigInt(processId) << 12n) |
+  const snowflakeBigInt = (BigInt(timestamp) << BigInt(22)) |
+                           (BigInt(workerId) << BigInt(17)) |
+                           (BigInt(processId) << BigInt(12)) |
                            BigInt(sequence);
   return snowflakeBigInt.toString();
 }
