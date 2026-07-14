@@ -1080,6 +1080,322 @@ export const tools: Tool[] = [
     howToUse: ['Select a date.', 'Click Calculate Week Details.', 'Review the ISO week number and day index.'],
     relatedTools: ['calendar-generator', 'date-calculator']
   },
+  {
+    name: 'JSON Validator',
+    slug: 'json-validator',
+    description: 'Validate and debug JSON data with syntax highlight warnings.',
+    longDescription: 'Check JSON string validity. Identifies spelling errors, mismatched braces, or double quotes and provides line numbers for troubleshooting.',
+    category: 'developer-tools',
+    tags: ['json', 'validator', 'lint', 'syntax checker', 'developer'],
+    keywords: ['json validator', 'validate json online', 'check json syntax', 'json lint free', 'fix json structure'],
+    icon: 'code',
+    executionType: 'client',
+    dateAdded: '2026-07-14',
+    metaTitle: 'JSON Validator – Check JSON Syntax & Errors | Toolkit',
+    metaDescription: 'Free online JSON validator. Lint and check JSON strings, view syntax errors with exact line and column numbers instantly.',
+    h1: 'JSON Lint & Validator',
+    intro: 'Validate your JSON strings and isolate structure errors with clear syntax checks.',
+    faqs: [
+      { question: 'Is my JSON data secure?', answer: 'Yes. Toolkit processes JSON completely inside your browser locally — no network transmission occurs.' },
+      { question: 'What does syntax linting show?', answer: 'It reports standard browser parsing exception errors, resolving incorrect trailing commas or unquoted keys.' }
+    ],
+    howToUse: ['Paste your JSON string.', 'Click Validate JSON.', 'Review structural error callouts.'],
+    relatedTools: ['json-formatter', 'json-minifier']
+  },
+  {
+    name: 'JSON Minifier',
+    slug: 'json-minifier',
+    description: 'Compress and minify JSON by stripping white spaces.',
+    longDescription: 'Strip comments, formatting indents, and newlines from a JSON structure to decrease transfer sizes.',
+    category: 'developer-tools',
+    tags: ['json', 'minify', 'compress', 'developer', 'formatter'],
+    keywords: ['json minifier', 'compress json online', 'strip whitespace json', 'make json single line', 'json payload compressor'],
+    icon: 'code',
+    executionType: 'client',
+    dateAdded: '2026-07-14',
+    metaTitle: 'JSON Minifier – Compress JSON Payloads | Toolkit',
+    metaDescription: 'Free online JSON minifier. Compress JSON payloads by stripping spaces, indentation, and newlines to decrease transfer weight.',
+    h1: 'JSON Compression Minifier',
+    intro: 'Minify JSON structures for payload optimization in APIs and storage.',
+    faqs: [
+      { question: 'Does minification validate JSON first?', answer: 'Yes, it attempts to parse the JSON string, ensuring only valid configurations are outputted.' }
+    ],
+    howToUse: ['Input formatted JSON.', 'Click Minify JSON.', 'Copy the single-line output.'],
+    relatedTools: ['json-formatter', 'json-validator']
+  },
+  {
+    name: 'JSON Viewer',
+    slug: 'json-viewer',
+    description: 'Inspect and view JSON strings in clean tree layouts.',
+    longDescription: 'Parse JSON strings and explore structural schemas in collapsible visual node listings.',
+    category: 'developer-tools',
+    tags: ['json', 'viewer', 'inspect', 'tree parser', 'developer'],
+    keywords: ['json viewer', 'inspect json tree', 'pretty print json', 'json tree outline', 'online json parsing viewer'],
+    icon: 'code',
+    executionType: 'client',
+    dateAdded: '2026-07-14',
+    metaTitle: 'JSON Viewer – Inspect Tree Nodes | Toolkit',
+    metaDescription: 'Free online JSON viewer. Inspect structures and expand collapsible key-value nodes.',
+    h1: 'Interactive JSON Viewer',
+    intro: 'Inspect and format JSON data, resolving nested schemas with clear structures.',
+    faqs: [
+      { question: 'Can I copy specific keys?', answer: 'Yes, double-clicking highlights output keys directly in your browser.' }
+    ],
+    howToUse: ['Paste JSON syntax.', 'Inspect properties and tree nodes.', 'Format or lint as needed.'],
+    relatedTools: ['json-validator', 'json-formatter']
+  },
+  {
+    name: 'JSON to YAML Converter',
+    slug: 'json-to-yaml',
+    description: 'Convert JSON structures to YAML formatting.',
+    longDescription: 'Translate standard key-value pairs and arrays from JSON into structured, indent-based YAML configs.',
+    category: 'developer-tools',
+    tags: ['json', 'yaml', 'converter', 'config', 'developer'],
+    keywords: ['json to yaml converter', 'convert json to yaml online', 'make yaml from json', 'json yaml parser', 'configs translation'],
+    icon: 'code',
+    executionType: 'client',
+    dateAdded: '2026-07-14',
+    metaTitle: 'JSON to YAML Converter – Convert Configs | Toolkit',
+    metaDescription: 'Free online JSON to YAML converter. Translate JSON properties into clean indent-based YAML code instantly.',
+    h1: 'JSON to YAML Translator',
+    intro: 'Convert config files from JSON representations to clean YAML scripts.',
+    faqs: [
+      { question: 'How are nested lists formatted?', answer: 'Nested arrays are converted to indent dashes according to standard YAML styles.' }
+    ],
+    howToUse: ['Paste your JSON content.', 'Click Convert JSON to YAML.', 'Review syntax outputs.'],
+    relatedTools: ['yaml-to-json', 'json-formatter']
+  },
+  {
+    name: 'YAML to JSON Converter',
+    slug: 'yaml-to-json',
+    description: 'Convert YAML configuration blocks to JSON.',
+    longDescription: 'Parse indent-based YAML files and convert them to standard bracketed JSON code.',
+    category: 'developer-tools',
+    tags: ['yaml', 'json', 'converter', 'config', 'developer'],
+    keywords: ['yaml to json converter', 'convert yaml to json online', 'make json from yaml', 'yaml to json parser', 'config converter'],
+    icon: 'code',
+    executionType: 'client',
+    dateAdded: '2026-07-14',
+    metaTitle: 'YAML to JSON Converter – Config Translator | Toolkit',
+    metaDescription: 'Free online YAML to JSON converter. Parse indent-based YAML properties and output standard JSON documents.',
+    h1: 'YAML to JSON Translator',
+    intro: 'Convert indent-based YAML properties to structured JSON data.',
+    faqs: [
+      { question: 'Does this handle custom comments?', answer: 'Comments starting with # are stripped automatically during translation.' }
+    ],
+    howToUse: ['Paste your YAML syntax.', 'Click Convert YAML to JSON.', 'Copy output brackets.'],
+    relatedTools: ['json-to-yaml', 'json-formatter']
+  },
+  {
+    name: 'XML Formatter',
+    slug: 'xml-formatter',
+    description: 'Format and beautify XML with custom tag indentations.',
+    longDescription: 'Organize raw, minified XML documents into nested hierarchical tags with clear spacing.',
+    category: 'developer-tools',
+    tags: ['xml', 'formatter', 'beautify', 'syntax', 'developer'],
+    keywords: ['xml formatter', 'beautify xml online', 'xml layout spacer', 'pretty print xml', 'format xml tabs'],
+    icon: 'code',
+    executionType: 'client',
+    dateAdded: '2026-07-14',
+    metaTitle: 'XML Formatter – Beautify XML Tags | Toolkit',
+    metaDescription: 'Free online XML formatter. Beautify XML documents with custom indent spacing to improve code readability.',
+    h1: 'XML Beautifier & Formatter',
+    intro: 'Clean up nested XML markup. Paste raw strings to align tag structures.',
+    faqs: [
+      { question: 'Does it support custom spaces?', answer: 'Yes, choose between 2, 4, or 8 space indents.' }
+    ],
+    howToUse: ['Paste raw XML markup.', 'Choose indent size.', 'Click Format XML.'],
+    relatedTools: ['xml-validator', 'json-formatter']
+  },
+  {
+    name: 'XML Validator',
+    slug: 'xml-validator',
+    description: 'Check XML tags and resolve structural layout warnings.',
+    longDescription: 'Lint raw XML data, highlighting open tags, mismatched nesting, or bracket formatting errors.',
+    category: 'developer-tools',
+    tags: ['xml', 'validator', 'lint', 'syntax', 'developer'],
+    keywords: ['xml validator', 'validate xml online', 'check xml syntax', 'xml lint free', 'find xml errors'],
+    icon: 'code',
+    executionType: 'client',
+    dateAdded: '2026-07-14',
+    metaTitle: 'XML Validator – Check XML Layout Syntax | Toolkit',
+    metaDescription: 'Free online XML validator. Lint tags, identify nesting mismatches, and check formatting.',
+    h1: 'XML Syntax Validator',
+    intro: 'Validate your XML structures, highlighting markup syntax errors.',
+    faqs: [
+      { question: 'Does it check tag nesting?', answer: 'Yes, it checks for correct nesting order of opening and closing elements.' }
+    ],
+    howToUse: ['Paste XML text.', 'Click Format & Validate XML.', 'Review warning reports.'],
+    relatedTools: ['xml-formatter', 'json-validator']
+  },
+  {
+    name: 'HTML Formatter',
+    slug: 'html-formatter',
+    description: 'Beautify HTML markup with indentation presets.',
+    longDescription: 'Indent nested HTML pages, keeping inline attributes readable and closing tags aligned.',
+    category: 'developer-tools',
+    tags: ['html', 'beautify', 'formatter', 'syntax', 'developer'],
+    keywords: ['html formatter', 'beautify html online', 'pretty print html', 'format html tables', 'indent html tag'],
+    icon: 'code',
+    executionType: 'client',
+    dateAdded: '2026-07-14',
+    metaTitle: 'HTML Formatter – Beautify HTML Markup | Toolkit',
+    metaDescription: 'Free online HTML formatter. Beautify pages with custom indentation offsets for tags and attributes.',
+    h1: 'HTML Beautifier & Formatter',
+    intro: 'Align raw HTML files to clean up structures and layouts.',
+    faqs: [
+      { question: 'Does it handle void tags?', answer: 'Yes, tags like img and br are processed correctly without requiring closing partners.' }
+    ],
+    howToUse: ['Paste html content.', 'Choose indent sizes.', 'Click Beautify HTML.'],
+    relatedTools: ['html-minifier', 'css-beautifier']
+  },
+  {
+    name: 'HTML Minifier',
+    slug: 'html-minifier',
+    description: 'Compress HTML files by stripping comments and double spaces.',
+    longDescription: 'Minify webpage scripts by removing dev comments, linebreaks, and unnecessary spacings.',
+    category: 'developer-tools',
+    tags: ['html', 'minify', 'compress', 'developer', 'speed'],
+    keywords: ['html minifier', 'compress html online', 'strip comments html', 'make html single line', 'page weight optimizer'],
+    icon: 'code',
+    executionType: 'client',
+    dateAdded: '2026-07-14',
+    metaTitle: 'HTML Minifier – Compress Page Spacing | Toolkit',
+    metaDescription: 'Free online HTML minifier. Compress webpage scripts by stripping dev comments and spacing.',
+    h1: 'HTML Compression Minifier',
+    intro: 'Optimize HTML page transfer payloads by stripping unnecessary spaces and comments.',
+    faqs: [
+      { question: 'Does it remove inline scripts?', answer: 'It preserves tag contents, including script and style blocks, while condensing overall spacing.' }
+    ],
+    howToUse: ['Input html page scripts.', 'Click Minify HTML.', 'Copy compressed results.'],
+    relatedTools: ['html-formatter', 'css-minifier']
+  },
+  {
+    name: 'CSS Beautifier',
+    slug: 'css-beautifier',
+    description: 'Beautify CSS stylesheets with custom spacing rules.',
+    longDescription: 'Indent nested selectors, split properties on newlines, and space out styles.',
+    category: 'developer-tools',
+    tags: ['css', 'beautify', 'formatter', 'styles', 'developer'],
+    keywords: ['css beautifier', 'format css online', 'pretty print css', 'css layout indentation', 'clean stylesheet spacing'],
+    icon: 'code',
+    executionType: 'client',
+    dateAdded: '2026-07-14',
+    metaTitle: 'CSS Beautifier – Format Stylesheets | Toolkit',
+    metaDescription: 'Free online CSS beautifier. Align properties and selectors into clean, spaced styles.',
+    h1: 'CSS Beautifier & Formatter',
+    intro: 'Organize stylesheets into indent structures.',
+    faqs: [
+      { question: 'Does it format media queries?', answer: 'Yes, nested selectors inside query blocks are indented relative to parent blocks.' }
+    ],
+    howToUse: ['Paste unformatted CSS styles.', 'Choose indent margins.', 'Click Beautify CSS.'],
+    relatedTools: ['css-minifier', 'html-formatter']
+  },
+  {
+    name: 'CSS Minifier',
+    slug: 'css-minifier',
+    description: 'Compress CSS stylesheets by stripping spacing and comments.',
+    longDescription: 'Minify styling documents by removing comment blocks, extra margins, and trailing semicolons.',
+    category: 'developer-tools',
+    tags: ['css', 'minify', 'compress', 'styles', 'developer'],
+    keywords: ['css minifier', 'compress css online', 'remove css comments', 'minify stylesheets free', 'speed up css page'],
+    icon: 'code',
+    executionType: 'client',
+    dateAdded: '2026-07-14',
+    metaTitle: 'CSS Minifier – Compress Stylesheet Files | Toolkit',
+    metaDescription: 'Free online CSS minifier. Remove comments and condense styles to reduce webpage assets transfer times.',
+    h1: 'CSS Compression Minifier',
+    intro: 'Condense CSS files, lowering browser styling asset transfer times.',
+    faqs: [
+      { question: 'Are syntax structures preserved?', answer: 'Yes, it removes only comments and spaces without affecting standard class rules.' }
+    ],
+    howToUse: ['Input styling rules.', 'Click Minify CSS.', 'Copy compressed stylesheet.'],
+    relatedTools: ['css-beautifier', 'html-minifier']
+  },
+  {
+    name: 'SQL Formatter',
+    slug: 'sql-formatter',
+    description: 'Format and beautify database queries with capitalized keywords.',
+    longDescription: 'Add readability to raw database queries. Formats linebreaks and capitalizes commands (SELECT, FROM, JOIN).',
+    category: 'developer-tools',
+    tags: ['sql', 'formatter', 'beautify', 'database', 'developer'],
+    keywords: ['sql formatter', 'beautify sql queries', 'capitalize sql keywords', 'pretty print database query', 'sql text spacer'],
+    icon: 'code',
+    executionType: 'client',
+    dateAdded: '2026-07-14',
+    metaTitle: 'SQL Formatter – Beautify Database Queries | Toolkit',
+    metaDescription: 'Free online SQL formatter. Beautify database queries by introducing structured linebreaks and capitalizing core commands.',
+    h1: 'SQL Query Beautifier',
+    intro: 'Beautify raw database queries for cleaner syntax inspection.',
+    faqs: [
+      { question: 'Which dialects are supported?', answer: 'This uses standard ANSI SQL capitalizations, applicable to MySQL, Postgres, SQL Server, and SQLite.' }
+    ],
+    howToUse: ['Paste database queries.', 'Select formatting options.', 'Click Format SQL.'],
+    relatedTools: ['sql-minifier', 'json-formatter']
+  },
+  {
+    name: 'SQL Minifier',
+    slug: 'sql-minifier',
+    description: 'Compress database query scripts by removing comments and line breaks.',
+    longDescription: 'Minify complex database query configurations by stripping trailing comments and compacting spaces.',
+    category: 'developer-tools',
+    tags: ['sql', 'minify', 'compress', 'database', 'developer'],
+    keywords: ['sql minifier', 'compress sql queries', 'strip sql comments', 'sql single line query', 'compact database statements'],
+    icon: 'code',
+    executionType: 'client',
+    dateAdded: '2026-07-14',
+    metaTitle: 'SQL Minifier – Compress Database Queries | Toolkit',
+    metaDescription: 'Free online SQL minifier. Compress database scripts by removing comments and compacting spaces.',
+    h1: 'SQL Query Compressor',
+    intro: 'Strip comments and linebreaks from queries to optimize database executions.',
+    faqs: [
+      { question: 'Does it handle single-line comments?', answer: 'Yes, lines beginning with -- are removed completely.' }
+    ],
+    howToUse: ['Input query command scripts.', 'Click Minify SQL.', 'Copy single-line outputs.'],
+    relatedTools: ['sql-formatter', 'json-minifier']
+  },
+  {
+    name: 'URL Encoder/Decoder',
+    slug: 'url-encoder-decoder',
+    description: 'Encode or decode strings to safely embed them in URL search queries.',
+    longDescription: 'Translate special symbols into percent-encoded parameters, or decode back to human-readable strings.',
+    category: 'developer-tools',
+    tags: ['url', 'encode', 'decode', 'uri', 'developer'],
+    keywords: ['url encoder', 'url decoder', 'percent encoding online', 'decode url parameters', 'uri codec free'],
+    icon: 'code',
+    executionType: 'client',
+    dateAdded: '2026-07-14',
+    metaTitle: 'URL Encoder/Decoder – Percent Encode URIs | Toolkit',
+    metaDescription: 'Free online URL encoder and decoder. Convert special symbols into percent-encoded parameters or parse queries back to normal text.',
+    h1: 'URL Percent Encoder & Decoder',
+    intro: 'Translate parameters for safe embedding inside web links.',
+    faqs: [
+      { question: 'What is the difference between encodeURI and encodeURIComponent?', answer: 'encodeURIComponent translates all symbols including slashes and query signs, while encodeURI preserves basic URL outlines.' }
+    ],
+    howToUse: ['Paste url string.', 'Select encoding scope.', 'Click Encode or Decode.'],
+    relatedTools: ['base64-encoder-decoder', 'hash-generator']
+  },
+  {
+    name: 'JWT Decoder',
+    slug: 'jwt-decoder',
+    description: 'Decode and inspect JSON Web Tokens (JWT) headers and claims.',
+    longDescription: 'Split a JWT to decode its header parameters and claims payload. Checks active expiration timestamps.',
+    category: 'developer-tools',
+    tags: ['jwt', 'decode', 'token', 'auth', 'developer'],
+    keywords: ['jwt decoder', 'inspect json web token', 'decode jwt payload', 'jwt expiration check', 'auth token parser'],
+    icon: 'code',
+    executionType: 'client',
+    dateAdded: '2026-07-14',
+    metaTitle: 'JWT Decoder – Inspect JSON Web Tokens | Toolkit',
+    metaDescription: 'Free online JWT decoder. Decode header parameters and claims payloads, and check expiration states instantly.',
+    h1: 'JSON Web Token (JWT) Decoder',
+    intro: 'Inspect JWT parameters, claims, and status variables.',
+    faqs: [
+      { question: 'Is my secret key required?', answer: 'No. This only decodes public metadata and payload parameters. It does not verify signatures, so no key is needed.' }
+    ],
+    howToUse: ['Paste JWT authorization string.', 'Click Decode JWT.', 'Review header, payload claims, and dates.'],
+    relatedTools: ['base64-encoder-decoder', 'uuid-generator']
+  },
 ];
 
 export function getToolBySlug(slug: string): Tool | undefined {
