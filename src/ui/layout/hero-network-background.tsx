@@ -31,7 +31,11 @@ function createNodes(width: number, height: number): Node[] {
   });
 }
 
-export function HeroNetworkBackground() {
+interface NetworkBackgroundProps {
+  className?: string;
+}
+
+function NetworkCanvas({ className }: NetworkBackgroundProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
@@ -185,7 +189,21 @@ export function HeroNetworkBackground() {
     <canvas
       ref={canvasRef}
       aria-hidden="true"
-      className="absolute inset-0 h-full w-full pointer-events-none z-0"
+      className={className}
     />
+  );
+}
+
+/** Original hero-only background — positioned absolute inside the hero section */
+export function HeroNetworkBackground() {
+  return (
+    <NetworkCanvas className="absolute inset-0 h-full w-full pointer-events-none z-0" />
+  );
+}
+
+/** Full-page background — fixed position canvas covering the entire viewport */
+export function PageNetworkBackground() {
+  return (
+    <NetworkCanvas className="fixed inset-0 h-full w-full pointer-events-none z-0" />
   );
 }

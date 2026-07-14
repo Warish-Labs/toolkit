@@ -5,7 +5,6 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import Fuse, { type IFuseOptions } from "fuse.js";
 import {
   CommandDialog,
-  CommandEmpty,
   CommandGroup,
   CommandInput,
   CommandItem,
@@ -112,7 +111,7 @@ export function SearchCommand({ open, onOpenChange }: SearchCommandProps) {
   // ─── Search — only fires on debouncedQuery changes ───────────────────────
   const results = useMemo(() => {
     if (!debouncedQuery.trim()) return { tools: [], categories: [] };
-    const all = fuse.search(debouncedQuery, { limit: 10 });
+    const all = fuse.search(debouncedQuery, { limit: 15 });
     return {
       tools:      all.filter((r) => r.item.type === "tool"),
       categories: all.filter((r) => r.item.type === "category"),
@@ -120,6 +119,7 @@ export function SearchCommand({ open, onOpenChange }: SearchCommandProps) {
   }, [fuse, debouncedQuery]);
 
   const hasResults = results.tools.length > 0 || results.categories.length > 0;
+  const isSearching = query.trim().length > 0;
 
   // ─── ⌘K / Ctrl+K global shortcut ─────────────────────────────────────────
   useEffect(() => {
@@ -150,8 +150,8 @@ export function SearchCommand({ open, onOpenChange }: SearchCommandProps) {
         onValueChange={setQuery}
       />
       <CommandList>
-        {query.trim() === "" ? (
-          /* ── Empty-query browse state (unchanged) ── */
+        {!isSearching ? (
+          /* ── Empty-query browse state ── */
           <>
             <CommandGroup heading="Quick Links">
               <CommandItem onSelect={() => handleSelect("/tools")}>
@@ -197,6 +197,7 @@ export function SearchCommand({ open, onOpenChange }: SearchCommandProps) {
                   return (
                     <CommandItem
                       key={item.slug}
+                      value={`tool-${item.slug}`}
                       onSelect={() => handleSelect(`/tools/${item.slug}`)}
                     >
                       <Icon className="mr-2 h-4 w-4 shrink-0" />
@@ -223,6 +224,7 @@ export function SearchCommand({ open, onOpenChange }: SearchCommandProps) {
                     return (
                       <CommandItem
                         key={item.slug}
+                        value={`cat-${item.slug}`}
                         onSelect={() => handleSelect(`/categories/${item.slug}`)}
                       >
                         <Icon className="mr-2 h-4 w-4 shrink-0" />
@@ -239,9 +241,9 @@ export function SearchCommand({ open, onOpenChange }: SearchCommandProps) {
               </>
             )}
 
-            {/* No results — only shown when debounce settled and nothing matched */}
+            {/* No results — use a plain div since CommandEmpty doesn't work with shouldFilter=false */}
             {!isPending && !hasResults && (
-              <CommandEmpty>
+              <div className="py-6 text-center text-sm">
                 <div className="flex flex-col items-center gap-2 py-4">
                   <p className="text-sm text-muted-foreground">
                     No results for &ldquo;{debouncedQuery}&rdquo;
@@ -254,7 +256,7 @@ export function SearchCommand({ open, onOpenChange }: SearchCommandProps) {
                     Browse categories
                   </button>
                 </div>
-              </CommandEmpty>
+              </div>
             )}
           </>
         )}
