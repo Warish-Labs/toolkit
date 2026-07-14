@@ -309,7 +309,7 @@ function ToolsHubContent() {
             </Select>
 
             {/* Sort Dropdown */}
-            <Select value={urlSort} onValueChange={handleSortChange}>
+            <Select value={urlSort} onValueChange={(val) => { if (val) handleSortChange(val); }}>
               <SelectTrigger className="w-full sm:w-[150px] text-xs bg-background">
                 <SelectValue placeholder="Sort By" />
               </SelectTrigger>
