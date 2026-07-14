@@ -93,23 +93,20 @@
 - [ ] ASCII Art Generator (`ascii-art-generator`) - ⬜ Todo
 
 ### Batch 4 — Text Tools
-- [ ] Word/Sentence/Paragraph Counter (`text-analyzer`) - ⬜ Todo
-- [ ] Reading Time Calculator (`reading-time-calculator`) - ⬜ Todo
-- [ ] Case Converter variants (`case-converter-extended`) - ⬜ Todo
-- [ ] Remove Duplicate/Empty Lines (`remove-duplicate-lines`) - ⬜ Todo
-- [ ] Sort/Reverse Lines (`sort-lines`) - ⬜ Todo
-- [ ] Reverse Text (`reverse-text`) - ⬜ Todo
-- [ ] Trim Whitespace (`trim-whitespace`) - ⬜ Todo
-- [ ] Remove Extra Spaces (`remove-spaces`) - ⬜ Todo
-- [ ] Remove Special Characters (`remove-special-characters`) - ⬜ Todo
-- [ ] Find and Replace (`find-replace`) - ⬜ Todo
+- [x] Text Analyzer (`text-analyzer`) - **Done** ✅
+- [x] Reading Time Calculator (`reading-time-calculator`) - **Done** ✅
+- [x] Remove Duplicate Lines (`remove-duplicate-lines`) - **Done** ✅
+- [x] Sort Lines (`sort-lines`) - **Done** ✅
+- [x] Reverse Text (`reverse-text`) - **Done** ✅
+- [x] Find and Replace (`find-replace`) - **Done** ✅
+- [x] Text Repeater (`text-repeater`) - **Done** ✅
+- [x] Trim Whitespace (`trim-whitespace`) - **Done** ✅
+- [x] Remove Special Characters (`remove-special-characters`) - **Done** ✅
+- [x] Text ↔ Binary Converter (`text-binary-converter`) - **Done** ✅
+- [ ] Case Converter Extended (`case-converter-extended`) - ⬜ Todo
 - [ ] Text Diff (`text-diff`) - ⬜ Todo
-- [ ] Unicode Converter/Inspector (`unicode-inspector`) - ⬜ Todo
+- [ ] Unicode Inspector (`unicode-inspector`) - ⬜ Todo
 - [ ] Emoji Picker (`emoji-picker`) - ⬜ Todo
-- [ ] Text Repeater (`text-repeater`) - ⬜ Todo
-- [ ] Text Shuffle (`text-shuffle`) - ⬜ Todo
-- [ ] Random Text Generator (`random-text-generator`) - ⬜ Todo
-- [ ] Text↔Binary (`text-binary-converter`) - ⬜ Todo
 - [ ] Morse Encoder/Decoder (`morse-converter`) - ⬜ Todo
 
 ### Batch 5 — Unit Converters
