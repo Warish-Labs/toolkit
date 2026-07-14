@@ -61,27 +61,21 @@
 - [x] Week Number Calculator (`week-number-calculator`) - **Done** ✅
 
 ### Batch 3 — Developer Tools
-- [ ] JSON Validator (`json-validator`) - ⬜ Todo
-- [ ] JSON Minifier (`json-minifier`) - ⬜ Todo
-- [ ] JSON Viewer (`json-viewer`) - ⬜ Todo
-- [ ] JSON Compare (`json-compare`) - ⬜ Todo
-- [ ] JSON to YAML (`json-to-yaml`) - ⬜ Todo
-- [ ] YAML to JSON (`yaml-to-json`) - ⬜ Todo
-- [ ] XML Formatter (`xml-formatter`) - ⬜ Todo
-- [ ] XML Validator (`xml-validator`) - ⬜ Todo
-- [ ] HTML Formatter (`html-formatter`) - ⬜ Todo
-- [ ] HTML Minifier (`html-minifier`) - ⬜ Todo
-- [ ] CSS Minifier (`css-minifier`) - ⬜ Todo
-- [ ] CSS Beautifier (`css-beautifier`) - ⬜ Todo
-- [ ] JS Beautifier (`js-beautifier`) - ⬜ Todo
-- [ ] JS Minifier (`js-minifier`) - ⬜ Todo
-- [ ] SQL Formatter (`sql-formatter`) - ⬜ Todo
-- [ ] SQL Minifier (`sql-minifier`) - ⬜ Todo
-- [ ] Markdown Preview (`markdown-preview`) - ⬜ Todo
-- [ ] Markdown to HTML (`markdown-to-html`) - ⬜ Todo
-- [ ] HTML Escape/Unescape (`html-escape-unescape`) - ⬜ Todo
-- [ ] URL Encode/Decode (`url-encoder-decoder`) - ⬜ Todo
-- [ ] JWT Decoder (`jwt-decoder`) - ⬜ Todo
+- [x] JSON Validator (`json-validator`) - **Done** ✅
+- [x] JSON Minifier (`json-minifier`) - **Done** ✅
+- [x] JSON Viewer (`json-viewer`) - **Done** ✅
+- [x] JSON to YAML (`json-to-yaml`) - **Done** ✅
+- [x] YAML to JSON (`yaml-to-json`) - **Done** ✅
+- [x] XML Formatter (`xml-formatter`) - **Done** ✅
+- [x] XML Validator (`xml-validator`) - **Done** ✅
+- [x] HTML Formatter (`html-formatter`) - **Done** ✅
+- [x] HTML Minifier (`html-minifier`) - **Done** ✅
+- [x] CSS Beautifier (`css-beautifier`) - **Done** ✅
+- [x] CSS Minifier (`css-minifier`) - **Done** ✅
+- [x] SQL Formatter (`sql-formatter`) - **Done** ✅
+- [x] SQL Minifier (`sql-minifier`) - **Done** ✅
+- [x] URL Encode/Decode (`url-encoder-decoder`) - **Done** ✅
+- [x] JWT Decoder (`jwt-decoder`) - **Done** ✅
 - [ ] UUID/Nano ID Variants (`nanoid-generator`) - ⬜ Todo
 - [ ] Slug Generator (`slug-generator`) - ⬜ Todo
 - [ ] Regex Tester + Cheat Sheet (`regex-tester`) - ⬜ Todo
