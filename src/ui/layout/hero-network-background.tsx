@@ -44,25 +44,34 @@ export function HeroNetworkBackground() {
     let rafId = 0;
     let nodes: Node[] = [];
 
+    // Helper to resolve CSS variable to standard browser-computed RGB colors
+    function resolveColor(cssValue: string): string {
+      if (typeof document === "undefined") return "rgb(120, 120, 120)";
+      const temp = document.createElement("div");
+      temp.style.color = cssValue;
+      temp.style.position = "absolute";
+      temp.style.visibility = "hidden";
+      document.body.appendChild(temp);
+      const computed = getComputedStyle(temp).color;
+      document.body.removeChild(temp);
+      return computed || "rgb(120, 120, 120)";
+    }
+
     // ── Color reading ────────────────────────────────────────────────
-    let nodeColor = "";
-    let lineColor = "";
+    let nodeColor = "rgb(120, 120, 120)";
+    let lineColor = "rgb(200, 200, 200)";
 
     function readColors() {
-      const style = getComputedStyle(document.documentElement);
-      // Pull raw CSS variable values (oklch strings supported by canvas in modern browsers)
-      const fg = style.getPropertyValue("--muted-foreground").trim();
-      const border = style.getPropertyValue("--border").trim();
-      // Wrap with color-mix to apply opacity without hardcoding alpha
-      nodeColor = `color-mix(in oklch, ${fg} 35%, transparent)`;
-      lineColor = `color-mix(in oklch, ${border} 60%, transparent)`;
+      // Resolve the theme variables to standard RGB colors
+      nodeColor = resolveColor("var(--muted-foreground)");
+      lineColor = resolveColor("var(--border)");
     }
 
     // ── Sizing ───────────────────────────────────────────────────────
     function resize() {
       const dpr = window.devicePixelRatio || 1;
-      const w = canvas!.offsetWidth;
-      const h = canvas!.offsetHeight;
+      const w = canvas!.offsetWidth || 800;
+      const h = canvas!.offsetHeight || 400;
       canvas!.width = w * dpr;
       canvas!.height = h * dpr;
       ctx!.scale(dpr, dpr);
@@ -76,8 +85,8 @@ export function HeroNetworkBackground() {
 
     function drawFrame() {
       if (!canvas || !ctx) return;
-      const W = canvas.offsetWidth;
-      const H = canvas.offsetHeight;
+      const W = canvas.offsetWidth || 800;
+      const H = canvas.offsetHeight || 400;
 
       ctx.clearRect(0, 0, W, H);
 
@@ -100,7 +109,7 @@ export function HeroNetworkBackground() {
           if (dist < MAX_CONNECT_DISTANCE) {
             const alpha = 1 - dist / MAX_CONNECT_DISTANCE;
             ctx.save();
-            ctx.globalAlpha = alpha * 0.18; // subtle lines
+            ctx.globalAlpha = alpha * 0.25; // Line opacity (raised slightly from 0.18 for dark backgrounds)
             ctx.strokeStyle = lineColor;
             ctx.lineWidth = 0.8;
             ctx.beginPath();
@@ -115,14 +124,16 @@ export function HeroNetworkBackground() {
       // Draw nodes
       ctx.fillStyle = nodeColor;
       for (const n of nodes) {
-        ctx.globalAlpha = 0.28;
+        ctx.globalAlpha = 0.38; // Node opacity (raised slightly from 0.28)
         ctx.beginPath();
         ctx.arc(n.x, n.y, n.radius, 0, Math.PI * 2);
         ctx.fill();
       }
       ctx.globalAlpha = 1;
 
-      rafId = requestAnimationFrame(drawFrame);
+      if (!prefersReduced) {
+        rafId = requestAnimationFrame(drawFrame);
+      }
     }
 
     // ── Pause on hidden tab ──────────────────────────────────────────
@@ -130,7 +141,9 @@ export function HeroNetworkBackground() {
       if (document.hidden) {
         cancelAnimationFrame(rafId);
       } else {
-        rafId = requestAnimationFrame(drawFrame);
+        if (!prefersReduced) {
+          rafId = requestAnimationFrame(drawFrame);
+        }
       }
     }
 
@@ -147,10 +160,8 @@ export function HeroNetworkBackground() {
     readColors();
     resize();
 
-    // Draw static frame immediately for reduced-motion, otherwise start loop
     if (prefersReduced) {
       drawFrame();
-      cancelAnimationFrame(rafId);
     } else {
       rafId = requestAnimationFrame(drawFrame);
     }
