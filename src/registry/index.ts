@@ -97,6 +97,12 @@ import { GcdLcmCalculatorTool } from "@/src/ui/tool/gcd-lcm-calculator";
 import { NumberBaseConverterTool } from "@/src/ui/tool/number-base-converter";
 import { ScientificNotationConverterTool } from "@/src/ui/tool/scientific-notation-converter";
 import { RomanNumeralConverterTool } from "@/src/ui/tool/roman-numeral-converter";
+import { PasswordStrengthCheckerTool } from "@/src/ui/tool/password-strength-checker";
+import { AesConverterTool } from "@/src/ui/tool/aes-converter";
+import { RsaDemoTool } from "@/src/ui/tool/rsa-demo";
+import { BrowserInfoTool } from "@/src/ui/tool/browser-info";
+import { StorageViewerTool } from "@/src/ui/tool/storage-viewer";
+import { ClipboardInspectorTool } from "@/src/ui/tool/clipboard-inspector";
 
 export const toolRegistry: Record<string, ComponentType> = {
   "age-calculator": AgeCalculatorTool,
@@ -207,6 +213,20 @@ export const toolRegistry: Record<string, ComponentType> = {
   "number-base-converter": NumberBaseConverterTool,
   "scientific-notation-converter": ScientificNotationConverterTool,
   "roman-numeral-converter": RomanNumeralConverterTool,
+  "password-strength-checker": PasswordStrengthCheckerTool,
+  "bcrypt-generator": PasswordStrengthCheckerTool,
+  "random-key-generator": PasswordStrengthCheckerTool,
+  "aes-converter": AesConverterTool,
+  "rsa-demo": RsaDemoTool,
+  "user-agent-parser": BrowserInfoTool,
+  "screen-resolution": BrowserInfoTool,
+  "browser-info": BrowserInfoTool,
+  "viewport-size": BrowserInfoTool,
+  "touch-tester": BrowserInfoTool,
+  "network-info": BrowserInfoTool,
+  "cookie-viewer": StorageViewerTool,
+  "storage-viewer": StorageViewerTool,
+  "clipboard-inspector": ClipboardInspectorTool,
 };
 
 export function getToolComponent(slug: string): ComponentType | null {

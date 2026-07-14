@@ -121,23 +121,23 @@
 - [x] Roman Numeral Converter (`roman-numeral-converter`) - **Done** ✅
 
 ### Batch 7 — Security & Encryption
-- [ ] Password Strength Checker (`password-strength-checker`) - ⬜ Todo
-- [ ] bcrypt Generator (`bcrypt-generator`) - ⬜ Todo
-- [ ] AES Encrypt/Decrypt (`aes-converter`) - ⬜ Todo
-- [ ] RSA Demo (`rsa-demo`) - ⬜ Todo
-- [ ] JWT Inspector/Expiry Checker (`jwt-inspector`) - ⬜ Todo
-- [ ] Random Key Generator (`random-key-generator`) - ⬜ Todo
+- [x] Password Strength Checker (`password-strength-checker`) - **Done** ✅
+- [x] bcrypt Generator (`bcrypt-generator`) - **Done** ✅
+- [x] AES Encrypt/Decrypt (`aes-converter`) - **Done** ✅
+- [x] RSA Demo (`rsa-demo`) - **Done** ✅
+- [x] JWT Inspector/Expiry Checker (`jwt-inspector`) - **Done** ✅ (Mapped to global `jwt-decoder` tool)
+- [x] Random Key Generator (`random-key-generator`) - **Done** ✅
 
 ### Batch 8 — Web Utilities
-- [ ] User Agent Parser (`user-agent-parser`) - ⬜ Todo
-- [ ] Screen Resolution (`screen-resolution`) - ⬜ Todo
-- [ ] Browser Information (`browser-info`) - ⬜ Todo
-- [ ] Viewport Size (`viewport-size`) - ⬜ Todo
-- [ ] Cookie Viewer (`cookie-viewer`) - ⬜ Todo
-- [ ] LocalStorage/SessionStorage Viewer (`storage-viewer`) - ⬜ Todo
-- [ ] Clipboard Inspector (`clipboard-inspector`) - ⬜ Todo
-- [ ] Device/Network Information (`network-info`) - ⬜ Todo
-- [ ] Touch Support Checker (`touch-tester`) - ⬜ Todo
+- [x] User Agent Parser (`user-agent-parser`) - **Done** ✅
+- [x] Screen Resolution (`screen-resolution`) - **Done** ✅
+- [x] Browser Information (`browser-info`) - **Done** ✅
+- [x] Viewport Size (`viewport-size`) - **Done** ✅
+- [x] Cookie Viewer (`cookie-viewer`) - **Done** ✅
+- [x] LocalStorage/SessionStorage Viewer (`storage-viewer`) - **Done** ✅
+- [x] Clipboard Inspector (`clipboard-inspector`) - **Done** ✅
+- [x] Device/Network Information (`network-info`) - **Done** ✅
+- [x] Touch Support Checker (`touch-tester`) - **Done** ✅
 
 ### Batch 9 — CSS Generators
 - [ ] Box Shadow (`css-box-shadow-generator`) - ⬜ Todo
