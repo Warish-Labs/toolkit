@@ -52,6 +52,17 @@ import { BusinessDaysCalculatorTool } from "@/src/ui/tool/business-days-calculat
 import { TimeZoneConverterTool } from "@/src/ui/tool/time-zone-converter";
 import { WeekNumberCalculatorTool } from "@/src/ui/tool/week-number-calculator";
 
+// --- Developer Tools (Batch 3) ---
+import { JsonValidatorTool } from "@/src/ui/tool/json-validator";
+import { JsonMinifierTool } from "@/src/ui/tool/json-minifier";
+import { JsonYamlConverterTool } from "@/src/ui/tool/json-to-yaml-converter";
+import { XmlFormatterTool } from "@/src/ui/tool/xml-formatter";
+import { HtmlFormatterMinifierTool } from "@/src/ui/tool/html-formatter-minifier";
+import { CssFormatterMinifierTool } from "@/src/ui/tool/css-formatter-minifier";
+import { SqlFormatterTool } from "@/src/ui/tool/sql-formatter";
+import { UrlEncoderDecoderTool } from "@/src/ui/tool/url-encoder-decoder";
+import { JwtDecoderTool } from "@/src/ui/tool/jwt-decoder";
+
 export const toolRegistry: Record<string, ComponentType> = {
   "age-calculator": AgeCalculatorTool,
   "bmi-calculator": BmiCalculatorTool,
@@ -105,6 +116,23 @@ export const toolRegistry: Record<string, ComponentType> = {
   "business-days-calculator": BusinessDaysCalculatorTool,
   "time-zone-converter": TimeZoneConverterTool,
   "week-number-calculator": WeekNumberCalculatorTool,
+
+  // --- Developer Tools ---
+  "json-validator": JsonValidatorTool,
+  "json-minifier": JsonMinifierTool,
+  "json-viewer": JsonValidatorTool, // uses JSON validator's viewer capabilities
+  "json-to-yaml": JsonYamlConverterTool,
+  "yaml-to-json": JsonYamlConverterTool,
+  "xml-formatter": XmlFormatterTool,
+  "xml-validator": XmlFormatterTool,
+  "html-formatter": HtmlFormatterMinifierTool,
+  "html-minifier": HtmlFormatterMinifierTool,
+  "css-beautifier": CssFormatterMinifierTool,
+  "css-minifier": CssFormatterMinifierTool,
+  "sql-formatter": SqlFormatterTool,
+  "sql-minifier": SqlFormatterTool,
+  "url-encoder-decoder": UrlEncoderDecoderTool,
+  "jwt-decoder": JwtDecoderTool,
 };
 
 export function getToolComponent(slug: string): ComponentType | null {
