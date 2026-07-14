@@ -46,19 +46,19 @@
 - [ ] Live Currency Converter - ⛔ Excluded (Requires live API; manual rates split calculator built instead)
 
 ### Batch 2 — Date & Time
-- [ ] Time Duration Calculator (`time-duration-calculator`) - ⬜ Todo
-- [ ] Date Difference Calculator (`date-difference-calculator`) - ⬜ Todo
-- [ ] Working Days Calculator (`working-days-calculator`) - ⬜ Todo
-- [ ] Countdown Calculator (`countdown-calculator`) - ⬜ Todo
-- [ ] Date Calculator (`date-calculator`) - ⬜ Todo
-- [ ] Stopwatch (`stopwatch`) - ⬜ Todo
-- [ ] Timer (`timer`) - ⬜ Todo
-- [ ] Calendar Generator (`calendar-generator`) - ⬜ Todo
-- [ ] Leap Year Checker (`leap-year-checker`) - ⬜ Todo
-- [ ] Age Difference (`age-difference`) - ⬜ Todo
-- [ ] Business Days Calculator (`business-days-calculator`) - ⬜ Todo
-- [ ] Time Zone Converter (`time-zone-converter`) - ⬜ Todo
-- [ ] Week Number Calculator (`week-number-calculator`) - ⬜ Todo
+- [x] Time Duration Calculator (`time-duration-calculator`) - **Done** ✅
+- [x] Date Difference Calculator (`date-difference-calculator`) - **Done** ✅
+- [x] Working Days Calculator (`working-days-calculator`) - **Done** ✅
+- [x] Countdown Calculator (`countdown-calculator`) - **Done** ✅
+- [x] Date Calculator (`date-calculator`) - **Done** ✅
+- [x] Stopwatch (`stopwatch`) - **Done** ✅
+- [x] Timer (`timer`) - **Done** ✅
+- [x] Calendar Generator (`calendar-generator`) - **Done** ✅
+- [x] Leap Year Checker (`leap-year-checker`) - **Done** ✅
+- [x] Age Difference (`age-difference-calculator`) - **Done** ✅
+- [x] Business Days Calculator (`business-days-calculator`) - **Done** ✅
+- [x] Time Zone Converter (`time-zone-converter`) - **Done** ✅
+- [x] Week Number Calculator (`week-number-calculator`) - **Done** ✅
 
 ### Batch 3 — Developer Tools
 - [ ] JSON Validator (`json-validator`) - ⬜ Todo
