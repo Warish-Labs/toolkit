@@ -41,7 +41,7 @@ export function Footer() {
           <div>
             <h3 className="text-sm font-semibold text-foreground">Categories</h3>
             <ul className="mt-3 space-y-2">
-              {categories.map((cat) => (
+              {categories.slice(0, 6).map((cat) => (
                 <li key={cat.slug}>
                   <Link
                     href={`/categories/${cat.slug}`}
@@ -51,6 +51,14 @@ export function Footer() {
                   </Link>
                 </li>
               ))}
+              <li className="pt-1">
+                <Link
+                  href="/categories"
+                  className="text-xs font-semibold text-primary hover:underline"
+                >
+                  View all categories &rarr;
+                </Link>
+              </li>
             </ul>
           </div>
 

@@ -233,41 +233,11 @@ function ToolsHubContent() {
             Explore our curated, local utility toolbox. Clean formatting, math projections, and offline scripts running entirely in your browser.
           </p>
         </div>
-
-        {/* Quick Category Chips Row */}
-        <div className="border-b border-border/40 pb-4">
-          <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none -mx-4 px-4 sm:mx-0 sm:px-0">
-            <button
-              onClick={() => handleCategoryChange("all")}
-              className={`whitespace-nowrap rounded-full px-4 py-1.5 text-xs font-semibold transition-all ${
-                urlCategory === "all"
-                  ? "bg-primary text-primary-foreground shadow"
-                  : "bg-secondary/40 text-muted-foreground hover:text-foreground hover:bg-secondary/80"
-              }`}
-            >
-              All Categories
-            </button>
-            {categories.map((cat) => (
-              <button
-                key={cat.slug}
-                onClick={() => handleCategoryChange(cat.slug)}
-                className={`whitespace-nowrap rounded-full px-4 py-1.5 text-xs font-semibold transition-all ${
-                  urlCategory === cat.slug
-                    ? "bg-primary text-primary-foreground shadow"
-                    : "bg-secondary/40 text-muted-foreground hover:text-foreground hover:bg-secondary/80"
-                }`}
-              >
-                {cat.name}
-              </button>
-            ))}
-          </div>
-        </div>
-
         {/* Filter Controls Bar */}
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between bg-muted/20 border border-border/40 p-4 rounded-2xl">
-          <div className="flex flex-col sm:flex-row gap-3 flex-1">
+          <div className="flex flex-col lg:flex-row gap-4 flex-1 items-start lg:items-center">
             {/* Search input with live text state */}
-            <div className="relative flex-1">
+            <div className="relative flex-1 w-full">
               <Search className="absolute left-3 top-2.5 h-4 w-4 text-muted-foreground" />
               <Input
                 type="text"
@@ -291,42 +261,47 @@ function ToolsHubContent() {
                 </button>
               )}
             </div>
-
+ 
             {/* Category Select Filter */}
-            <Select value={urlCategory} onValueChange={(val) => handleCategoryChange(val || "all")}>
-              <SelectTrigger className="w-full sm:w-[180px] text-xs bg-background">
-                <SlidersHorizontal className="h-3.5 w-3.5 mr-2 text-muted-foreground" />
-                <SelectValue placeholder="Category" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="all">All Categories</SelectItem>
-                {categories.map((cat) => (
-                  <SelectItem key={cat.slug} value={cat.slug}>
-                    {cat.name}
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
-
+            <div className="flex items-center gap-2 w-full sm:w-auto shrink-0">
+              <span className="text-xs font-semibold text-muted-foreground whitespace-nowrap">Category:</span>
+              <Select value={urlCategory} onValueChange={(val) => handleCategoryChange(val || "all")}>
+                <SelectTrigger className="w-full sm:w-[200px] text-xs bg-background">
+                  <SelectValue placeholder="All Categories" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="all">All Categories</SelectItem>
+                  {categories.map((cat) => (
+                    <SelectItem key={cat.slug} value={cat.slug}>
+                      {cat.name}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+            </div>
+ 
             {/* Sort Dropdown */}
-            <Select value={urlSort} onValueChange={(val) => { if (val) handleSortChange(val); }}>
-              <SelectTrigger className="w-full sm:w-[150px] text-xs bg-background">
-                <SelectValue placeholder="Sort By" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="featured">Featured First</SelectItem>
-                <SelectItem value="newest">Newest Added</SelectItem>
-                <SelectItem value="oldest">Oldest Added</SelectItem>
-                <SelectItem value="az">A–Z Alphabetical</SelectItem>
-                <SelectItem value="za">Z–A Alphabetical</SelectItem>
-              </SelectContent>
-            </Select>
+            <div className="flex items-center gap-2 w-full sm:w-auto shrink-0">
+              <span className="text-xs font-semibold text-muted-foreground whitespace-nowrap">Sort By:</span>
+              <Select value={urlSort} onValueChange={(val) => { if (val) handleSortChange(val); }}>
+                <SelectTrigger className="w-full sm:w-[150px] text-xs bg-background">
+                  <SelectValue placeholder="Sort By" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="featured">Featured First</SelectItem>
+                  <SelectItem value="newest">Newest Added</SelectItem>
+                  <SelectItem value="oldest">Oldest Added</SelectItem>
+                  <SelectItem value="az">A–Z Alphabetical</SelectItem>
+                  <SelectItem value="za">Z–A Alphabetical</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
           </div>
-
+ 
           {hasActiveFilters && (
             <button
               onClick={handleClearFilters}
-              className="text-xs text-primary font-semibold hover:underline flex items-center gap-1 justify-center py-2"
+              className="text-xs text-primary font-semibold hover:underline flex items-center gap-1 justify-center py-2 shrink-0"
             >
               Clear All Filters
             </button>
