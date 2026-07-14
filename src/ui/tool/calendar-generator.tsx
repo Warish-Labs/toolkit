@@ -69,7 +69,7 @@ export function CalendarGeneratorTool() {
       <div className="grid gap-4 sm:grid-cols-3 print:hidden">
         <div className="space-y-2">
           <Label htmlFor="calendar-year">Year</Label>
-          <Select value={year} onValueChange={setYear}>
+          <Select value={year} onValueChange={(val) => { if (val) setYear(val); }}>
             <SelectTrigger id="calendar-year">
               <SelectValue />
             </SelectTrigger>
@@ -85,7 +85,7 @@ export function CalendarGeneratorTool() {
 
         <div className="space-y-2">
           <Label htmlFor="calendar-month">Month</Label>
-          <Select value={month} onValueChange={setMonth}>
+          <Select value={month} onValueChange={(val) => { if (val) setMonth(val); }}>
             <SelectTrigger id="calendar-month">
               <SelectValue />
             </SelectTrigger>

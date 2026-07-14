@@ -84,7 +84,7 @@ export function TimeZoneConverterTool() {
       <div className="grid gap-4 sm:grid-cols-2">
         <div className="space-y-2">
           <Label htmlFor="source-zone">From Time Zone</Label>
-          <Select value={sourceZone} onValueChange={(val) => { setSourceZone(val); setResult(null); }}>
+          <Select value={sourceZone} onValueChange={(val) => { if (val) { setSourceZone(val); setResult(null); } }}>
             <SelectTrigger id="source-zone">
               <SelectValue />
             </SelectTrigger>
@@ -100,7 +100,7 @@ export function TimeZoneConverterTool() {
 
         <div className="space-y-2">
           <Label htmlFor="target-zone">To Time Zone</Label>
-          <Select value={targetZone} onValueChange={(val) => { setTargetZone(val); setResult(null); }}>
+          <Select value={targetZone} onValueChange={(val) => { if (val) { setTargetZone(val); setResult(null); } }}>
             <SelectTrigger id="target-zone">
               <SelectValue />
             </SelectTrigger>
