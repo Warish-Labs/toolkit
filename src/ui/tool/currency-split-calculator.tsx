@@ -240,7 +240,7 @@ export function CurrencySplitCalculatorTool() {
                 </div>
                 <div className="space-y-1">
                   <Label htmlFor="exp-currency">Currency</Label>
-                  <Select value={expCurrency} onValueChange={setExpCurrency}>
+                  <Select value={expCurrency} onValueChange={(val) => { if (val) setExpCurrency(val); }}>
                     <SelectTrigger id="exp-currency" className="h-8 text-xs">
                       <SelectValue />
                     </SelectTrigger>
@@ -259,7 +259,7 @@ export function CurrencySplitCalculatorTool() {
             <div className="grid gap-3 sm:grid-cols-2">
               <div className="space-y-1">
                 <Label htmlFor="exp-payer">Paid By</Label>
-                <Select value={expPayer} onValueChange={setExpPayer}>
+                <Select value={expPayer} onValueChange={(val) => { if (val) setExpPayer(val); }}>
                   <SelectTrigger id="exp-payer" className="h-8 text-xs">
                     <SelectValue />
                   </SelectTrigger>

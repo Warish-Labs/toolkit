@@ -108,7 +108,7 @@ export function MortgageCalculatorTool() {
 
         <div className="space-y-2">
           <Label htmlFor="term">Loan Term</Label>
-          <Select value={termYears} onValueChange={(val) => { setTermYears(val); setResult(null); }}>
+          <Select value={termYears} onValueChange={(val) => { if (val) { setTermYears(val); setResult(null); } }}>
             <SelectTrigger id="term">
               <SelectValue />
             </SelectTrigger>
