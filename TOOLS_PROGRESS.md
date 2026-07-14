@@ -16,32 +16,32 @@
 ---
 
 ### Batch 1 — Calculators
-- [ ] Percentage Increase/Decrease (`percentage-change-calculator`) - ⬜ Todo
-- [ ] BMR Calculator (`bmr-calculator`) - ⬜ Todo
-- [ ] Calorie Calculator (`calorie-calculator`) - ⬜ Todo
-- [ ] EMI Calculator (`emi-calculator`) - ⬜ Todo
-- [ ] Loan Calculator (`loan-calculator`) - ⬜ Todo
-- [ ] Mortgage Calculator (`mortgage-calculator`) - ⬜ Todo
-- [ ] Compound Interest Calculator (`compound-interest-calculator`) - ⬜ Todo
-- [ ] Simple Interest Calculator (`simple-interest-calculator`) - ⬜ Todo
-- [ ] GST Calculator (`gst-calculator`) - ⬜ Todo
-- [ ] VAT Calculator (`vat-calculator`) - ⬜ Todo
-- [ ] Discount Calculator (`discount-calculator`) - ⬜ Todo
-- [ ] Profit Margin Calculator (`profit-margin-calculator`) - ⬜ Todo
-- [ ] Sales Tax Calculator (`sales-tax-calculator`) - ⬜ Todo
-- [ ] Tip Calculator (`tip-calculator`) - ⬜ Todo
-- [ ] Salary Calculator (`salary-calculator`) - ⬜ Todo
-- [ ] Hourly Wage Calculator (`hourly-wage-calculator`) - ⬜ Todo
-- [ ] Inflation Calculator (`inflation-calculator`) - ⬜ Todo
-- [ ] Investment Calculator (`investment-calculator`) - ⬜ Todo
-- [ ] SIP Calculator (`sip-calculator`) - ⬜ Todo
-- [ ] FD Calculator (`fd-calculator`) - ⬜ Todo
-- [ ] RD Calculator (`rd-calculator`) - ⬜ Todo
-- [ ] Break Even Calculator (`break-even-calculator`) - ⬜ Todo
-- [ ] ROI Calculator (`roi-calculator`) - ⬜ Todo
-- [ ] CAGR Calculator (`cagr-calculator`) - ⬜ Todo
-- [ ] CAGR Reverse Calculator (`cagr-reverse-calculator`) - ⬜ Todo
-- [ ] Currency Split Calculator (offline/manual rates) (`currency-split-calculator`) - ⬜ Todo
+- [x] Percentage Increase/Decrease (`percentage-increase-decrease-calculator`) - **Done** ✅
+- [x] BMR Calculator (`bmr-calculator`) - **Done** ✅
+- [x] Calorie Calculator (`calorie-calculator`) - **Done** ✅
+- [x] EMI Calculator (`emi-calculator`) - **Done** ✅
+- [x] Loan Calculator (`loan-calculator`) - **Done** ✅
+- [x] Mortgage Calculator (`mortgage-calculator`) - **Done** ✅
+- [x] Compound Interest Calculator (`compound-interest-calculator`) - **Done** ✅
+- [x] Simple Interest Calculator (`simple-interest-calculator`) - **Done** ✅
+- [x] GST Calculator (`gst-calculator`) - **Done** ✅
+- [x] VAT Calculator (`vat-calculator`) - **Done** ✅
+- [x] Discount Calculator (`discount-calculator`) - **Done** ✅
+- [x] Profit Margin Calculator (`profit-margin-calculator`) - **Done** ✅
+- [x] Sales Tax Calculator (`sales-tax-calculator`) - **Done** ✅
+- [x] Tip Calculator (`tip-calculator`) - **Done** ✅
+- [x] Salary Calculator (`salary-calculator`) - **Done** ✅
+- [x] Hourly Wage Calculator (`hourly-wage-calculator`) - **Done** ✅
+- [x] Inflation Calculator (`inflation-calculator`) - **Done** ✅
+- [x] Investment Calculator (`investment-calculator`) - **Done** ✅
+- [x] SIP Calculator (`sip-calculator`) - **Done** ✅
+- [x] FD Calculator (`fd-calculator`) - **Done** ✅
+- [x] RD Calculator (`rd-calculator`) - **Done** ✅
+- [x] Break Even Calculator (`break-even-calculator`) - **Done** ✅
+- [x] ROI Calculator (`roi-calculator`) - **Done** ✅
+- [x] CAGR Calculator (`cagr-calculator`) - **Done** ✅
+- [x] CAGR Reverse Calculator (`cagr-reverse-calculator`) - **Done** ✅
+- [x] Currency Split Calculator (offline/manual rates) (`currency-split-calculator`) - **Done** ✅
 - [ ] IP Lookup - ⛔ Excluded (Requires paid/external API)
 - [ ] Live Currency Converter - ⛔ Excluded (Requires live API; manual rates split calculator built instead)
 
