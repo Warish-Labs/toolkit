@@ -1,12 +1,30 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { decodeJwt, type DecodedJwt } from "@/src/logic/jwt-decoder";
 
 export function JwtDecoderTool() {
   const [token, setToken] = useState("");
   const [result, setResult] = useState<DecodedJwt | null>(null);
   const [error, setError] = useState("");
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search);
+      const tokenParam = params.get("token");
+      if (tokenParam) {
+        setToken(tokenParam);
+        setError("");
+        try {
+          const res = decodeJwt(tokenParam);
+          setResult(res);
+        } catch (e) {
+          setError(e instanceof Error ? e.message : "Error decoding JWT");
+          setResult(null);
+        }
+      }
+    }
+  }, []);
 
   const handleDecode = () => {
     setError("");

@@ -62,6 +62,8 @@ import { CssFormatterMinifierTool } from "@/src/ui/tool/css-formatter-minifier";
 import { SqlFormatterTool } from "@/src/ui/tool/sql-formatter";
 import { UrlEncoderDecoderTool } from "@/src/ui/tool/url-encoder-decoder";
 import { JwtDecoderTool } from "@/src/ui/tool/jwt-decoder";
+import { JwtGeneratorTool } from "@/src/ui/tool/jwt-generator";
+import { TokenGeneratorTool } from "@/src/ui/tool/token-generator";
 import { NanoidGeneratorTool } from "@/src/ui/tool/nanoid-generator";
 import { SlugGeneratorTool } from "@/src/ui/tool/slug-generator";
 import { RegexTesterTool } from "@/src/ui/tool/regex-tester";
@@ -183,6 +185,8 @@ export const toolRegistry: Record<string, ComponentType> = {
   "sql-minifier": SqlFormatterTool,
   "url-encoder-decoder": UrlEncoderDecoderTool,
   "jwt-decoder": JwtDecoderTool,
+  "jwt-generator": JwtGeneratorTool,
+  "token-generator": TokenGeneratorTool,
   "nanoid-generator": NanoidGeneratorTool,
   "slug-generator": SlugGeneratorTool,
   "regex-tester": RegexTesterTool,

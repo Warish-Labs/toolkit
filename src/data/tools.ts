@@ -3912,6 +3912,62 @@ export const tools: Tool[] = [
     howToUse: ['Allow microphone access.', 'Speak or make sounds.', 'Watch the waveform visualization.'],
     relatedTools: ['audio-recorder', 'screen-recorder']
   },
+  {
+    name: 'JWT Generator',
+    slug: 'jwt-generator',
+    description: 'Create and sign JSON Web Tokens (JWT) client-side securely.',
+    longDescription: 'Generate custom JSON Web Tokens (JWT) by configuring headers and payloads. Sign with HS256, HS384, HS512, or RS256, or generate unsigned tokens completely client-side.',
+    category: 'developer-tools',
+    tags: ['jwt', 'generator', 'token', 'auth', 'developer', 'sign', 'encode'],
+    keywords: ['jwt generator', 'generate jwt online', 'jwt token builder', 'sign json web token', 'create jwt hs256 rs256', 'free jwt creator'],
+    icon: 'code',
+    executionType: 'client',
+    dateAdded: '2026-07-22',
+    isNew: true,
+    metaTitle: 'JWT Generator – Create JSON Web Tokens | Toolkit',
+    metaDescription: 'Free online JWT generator. Generate and sign custom JSON Web Tokens (JWT) with HS256, HS384, HS512, RS256, or none. Local & secure.',
+    h1: 'JSON Web Token (JWT) Generator',
+    intro: 'Configure and sign JSON Web Tokens (JWT) locally in your browser. Perfect for testing authentication and authorization flows.',
+    faqs: [
+      { question: 'Is this JWT generator safe to use?', answer: 'Yes. All token generation, signing, and key generation are processed 100% client-side in your browser. Your secrets and private keys never leave your machine.' },
+      { question: 'What signature algorithms are supported?', answer: 'We support HMAC symmetric signing (HS256, HS384, HS512) and RSA asymmetric signing (RS256). You can also generate unsigned tokens by selecting "none".' },
+      { question: 'How do I verify the generated JWT?', answer: 'You can decode and inspect the generated token in our integrated JWT Decoder, or use the generated public key to verify signatures.' }
+    ],
+    howToUse: [
+      'Configure the JWT header (algorithm, key ID) and payload claims JSON.',
+      'Choose a signing algorithm (HS256, HS384, HS512, RS256, or none) and supply a signing secret or private key.',
+      'Click Generate JWT to create, sign, and display the final encoded token.'
+    ],
+    relatedTools: ['jwt-decoder', 'base64-encoder-decoder', 'random-generator', 'hash-checker']
+  },
+  {
+    name: 'Secret Token Generator',
+    slug: 'token-generator',
+    description: 'Generate secure random keys and tokens for your .env files.',
+    longDescription: 'Generate cryptographically strong random keys and API tokens for environment variables (.env files). Supports custom lengths and formats like Hex, Base64, Base64URL, and Alphanumeric + Symbols.',
+    category: 'developer-tools',
+    tags: ['token', 'generator', 'env', 'secret', 'key', 'random', 'developer'],
+    keywords: ['secret token generator', 'generate secure keys', 'env secret generator', 'jwt secret key generator', 'api key generator online', 'free secure keys generator'],
+    icon: 'key',
+    executionType: 'client',
+    dateAdded: '2026-07-22',
+    isNew: true,
+    metaTitle: 'Secret Token Generator – Generate Secure Env Keys | Toolkit',
+    metaDescription: 'Free online secret token generator. Generate secure, cryptographically strong random secret keys, API tokens, and session keys of different sizes in Hex, Base64, Base64URL, and UTF-8 for your .env files.',
+    h1: 'Secret Token & Key Generator',
+    intro: 'Generate cryptographically secure random keys and tokens of any size and format for your environment variables (.env files), API access, and authentication secrets.',
+    faqs: [
+      { question: 'What makes these tokens secure?', answer: 'The tokens are generated using the browser\'s cryptographically secure random number generator (window.crypto.getRandomValues). This is much safer than standard pseudo-random number generators.' },
+      { question: 'Which format should I use for a JWT secret?', answer: 'Base64URL or Hex formats of 32 bytes (256 bits) or 64 bytes (512 bits) are standard and highly recommended for JWT signing keys.' },
+      { question: 'Are these tokens saved on any server?', answer: 'No. All generation happens locally in your browser. Once you close the tab, the generated tokens are gone forever unless you copy them.' }
+    ],
+    howToUse: [
+      'Select a preset (e.g. JWT Secret, NextAuth, Laravel APP_KEY) or configure custom settings.',
+      'Choose your preferred token length/size (in bytes or characters) and output format.',
+      'Click Generate to create secure tokens and copy them directly to your clipboard.'
+    ],
+    relatedTools: ['jwt-generator', 'random-generator', 'nanoid-generator', 'uuid-generator']
+  },
 ];
 
 export function getToolBySlug(slug: string): Tool | undefined {
