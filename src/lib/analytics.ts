@@ -42,12 +42,13 @@ export async function sendAnalytics(payload: AnalyticsPayload = {}): Promise<voi
     const visitorId = getVisitorId();
 
     const fullPayload = {
+      projectSlug: projectId,
       projectId,
       visitorId,
       path: window.location.pathname + window.location.search,
       url: window.location.href,
-      referrer: document.referrer || '',
-      userAgent: navigator.userAgent || '',
+      referrer: document.referrer || null,
+      userAgent: navigator.userAgent || null,
       timestamp: new Date().toISOString(),
       ...payload,
     };
