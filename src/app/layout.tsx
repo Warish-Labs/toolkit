@@ -4,7 +4,9 @@ import Script from "next/script";
 import "./globals.css";
 import { Providers } from "@/src/ui/layout/providers";
 import { AppShell } from "@/src/ui/layout/app-shell";
+import { AnalyticsTracker } from "@/src/ui/layout/analytics-tracker";
 import { SITE_CONFIG } from "@/src/constants/site";
+
 
 const geistSans = Geist({
   variable: "--font-sans",
@@ -120,6 +122,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-full flex flex-col font-sans bg-background text-foreground selection:bg-primary/10">
         <Providers>
+          <AnalyticsTracker />
           <AppShell>{children}</AppShell>
         </Providers>
         {SITE_CONFIG.googleAnalyticsId && (
